@@ -123,4 +123,8 @@
       
       (loop for value being the hash-values of node-by-name do
 	   (setf (gethash (id value) node-by-id) value))
-      graph)))
+      graph)
+    (with-slots (max-node-id max-edge-id) graph
+      (setf max-node-id node-id)
+      (setf max-edge-id edge-id))
+    graph))
