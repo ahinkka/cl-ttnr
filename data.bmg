@@ -1,0 +1,904 @@
+# _canvas -3141.0,-2637.9,3717.9,3557.9
+# _database biomine v3_17_beta2 spe-1.cs.helsinki.fi http://biomine.cs.helsinki.fi/bm/links.cgi
+Protein_UniProt:O00468
+Protein_UniProt:O76061
+Protein_UniProt:O94760
+Protein_UniProt:P02750
+Protein_UniProt:P02751
+Protein_UniProt:P04083
+Protein_UniProt:P04792
+Protein_UniProt:P05067
+Protein_UniProt:P05109
+Protein_UniProt:P05154
+Protein_UniProt:P05231
+Protein_UniProt:P06702
+Protein_UniProt:P07237
+Protein_UniProt:P07288
+Protein_UniProt:P07355
+Protein_UniProt:P07602
+Protein_UniProt:P07741
+Protein_UniProt:P08133
+Protein_UniProt:P08476
+Protein_UniProt:P08865
+Protein_UniProt:P09529
+Protein_UniProt:P10809
+Protein_UniProt:P12109
+Protein_UniProt:P12110
+Protein_UniProt:P12830
+Protein_UniProt:P15309
+Protein_UniProt:P15531
+Protein_UniProt:P16035
+Protein_UniProt:P17931
+Protein_UniProt:P18065
+Protein_UniProt:P20151
+Protein_UniProt:P21741
+Protein_UniProt:P22626
+Protein_UniProt:P23142
+Protein_UniProt:P24592
+Protein_UniProt:P24593
+Protein_UniProt:P25311
+Protein_UniProt:P30040
+Protein_UniProt:P30048
+Protein_UniProt:P30084
+Protein_UniProt:P30086
+Protein_UniProt:P35232
+Protein_UniProt:P38646
+Protein_UniProt:P49411
+Protein_UniProt:P51659
+Protein_UniProt:P52788
+Protein_UniProt:P55058
+Protein_UniProt:P61769
+Protein_UniProt:P61812
+Protein_UniProt:Q00987
+Protein_UniProt:Q02790
+Protein_UniProt:Q02818
+Protein_UniProt:Q03154
+Protein_UniProt:Q08380
+Protein_UniProt:Q10471
+Protein_UniProt:Q13162
+Protein_UniProt:Q13275
+Protein_UniProt:Q13347
+Protein_UniProt:Q13753
+Protein_UniProt:Q14118
+Protein_UniProt:Q14767
+Protein_UniProt:Q15181
+Protein_UniProt:Q5SYW0
+Protein_UniProt:Q8NCL4
+Protein_UniProt:Q92876
+Protein_UniProt:Q9GZM7
+Protein_UniProt:Q9HC84
+Protein_UniProt:Q9UBX7
+# _symmetric functionally_associated_to
+# _symmetric interacts_with
+# _symmetric is_homologous_to
+# _symmetric is_related_to
+BiologicalProcess_GO:GO:0046881 BiologicalProcess_GO:GO:0046884 is_part_of goodness=0.70119 pos=3327.3,-684.5 reliability=1.0 source_db_name=GO source_db_version=2008-08-27_19:30
+BiologicalProcess_GO:GO:0046882 BiologicalProcess_GO:GO:0046884 is_part_of goodness=0.70119 pos=3254.2,-733.4 reliability=1.0 source_db_name=GO source_db_version=2008-08-27_19:30
+Domain_InterPro:IPR012883 BiologicalProcess_GO:GO:0009306 participates_in goodness=0.741935 pos=-2676.5,1392.7 reliability=1.0 source_db_name=InterPro source_db_version=17.0
+Protein_UniProt:P30048 Enzyme_EC:1.11.1.15 -subsumes goodness=0.578668 pos=-2319.3,2038.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Enzyme_EC:1.11.1.15 Protein_UniProt:Q13162 subsumes goodness=0.578668 pos=-2182.2,1776.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P07288 Enzyme_EC:3.4.21.77 -subsumes goodness=0.9 pos=1994.6,2383.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P51659 Enzyme_EC:4.2.1.107 -subsumes goodness=0.763263 pos=-783.7,-1607.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Enzyme_EC:1.11.1.15 Gene_EntrezGene:10549 -codes_for goodness=0.566082 pos=-2162.6,1965.4 reliability=1.0 source_db_name=KEGG source_db_version=47
+Protein_UniProt:Q13162 Gene_EntrezGene:10549 -codes_for goodness=0.9 pos=-2073.6,1762.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:10961 BiologicalProcess_GO:GO:0009306 participates_in evidence_code=IEA goodness=0.538323 pos=-2614.9,1184.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:10961 MolecularFunction_GO:GO:0003756 has evidence_code=TAS goodness=0.593779 pos=-2285.3,874.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P30040 Gene_EntrezGene:10961 -codes_for goodness=0.9 pos=-2410.1,1175.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:116844 Gene_EntrezGene:2335 interacts_with goodness=0.533025 pos=839.5,-1662.6 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P02750 Gene_EntrezGene:116844 -codes_for goodness=0.83973 pos=1056.3,-1941.5 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+AllelicVariant_MIM:120240.0005 Gene_EntrezGene:1291 -refers_to goodness=0.7 pos=631.7,-2025.2 reliability=1.0 source_db_name=MIM source_db_version=2008-08-28
+Gene_EntrezGene:1291 Gene_EntrezGene:3959 interacts_with goodness=0.559062 pos=574.0,-1723.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Phenotype_MIM:158810 Gene_EntrezGene:1291 -affects goodness=0.683852 pos=724.5,-2016.1 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Phenotype_MIM:254090 Gene_EntrezGene:1291 -affects goodness=0.683852 pos=571.3,-1876.3 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:1291 Protein_UniProt:P12109 codes_for goodness=0.806363 pos=762.3,-1741.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:1291 Protein_UniProt:Q8TBN2 codes_for goodness=0.806363 pos=845.2,-1798.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:1292 AllelicVariant_MIM:120240.0005 has goodness=0.714895 pos=449.2,-2122.4 reliability=1.0 source_db_name=MIM source_db_version=2008-08-28
+Gene_EntrezGene:1292 Phenotype_MIM:158810 affects goodness=0.71215 pos=534.7,-2072.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Phenotype_MIM:254090 Gene_EntrezGene:1292 -affects goodness=0.71215 pos=389.7,-1918.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P12110 Gene_EntrezGene:1292 -codes_for goodness=0.783495 pos=353.3,-1758.1 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:16324 Gene_EntrezGene:3625 is_homologous_to goodness=0.69644 hom_AA=0.972973 hom_KaKs=0.024944 hom_KnrKnc=0.265861 hom_NT=0.903358 pos=3350.3,-241.0 reliability=1.0 source_db_name=HomoloGene source_db_version=62
+Protein_UniProt:Q04999 Gene_EntrezGene:16324 -codes_for goodness=0.9 pos=3523.8,-405.1 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:2335 Gene_EntrezGene:3959 interacts_with goodness=0.415747 pos=579.2,-1531.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:2335 Protein_UniProt:P02751 codes_for goodness=0.670451 pos=620.5,-1179.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+BiologicalProcess_GO:GO:0046881 Gene_EntrezGene:25196 -participates_in evidence_code=ISS goodness=0.648781 pos=3347.2,-447.5 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+BiologicalProcess_GO:GO:0046882 Gene_EntrezGene:25196 -participates_in evidence_code=ISS goodness=0.606644 pos=3263.3,-466.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:25196 Gene_EntrezGene:3625 is_homologous_to goodness=0.69644 hom_AA=0.97543 hom_KaKs=0.02502 hom_KnrKnc=0.179492 hom_NT=0.90991 pos=3264.2,-257.4 reliability=1.0 source_db_name=HomoloGene source_db_version=62
+MolecularFunction_GO:GO:0004859 Gene_EntrezGene:301 -has evidence_code=IEA goodness=0.544577 pos=-45.9,-293.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P04083 Gene_EntrezGene:301 -codes_for goodness=0.766206 pos=-184.6,-454.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+MolecularFunction_GO:GO:0004859 Gene_EntrezGene:302 -has evidence_code=TAS goodness=0.575922 pos=30.2,-118.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P07355 Gene_EntrezGene:302 -codes_for goodness=0.806363 pos=23.0,113.3 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3181 Gene_EntrezGene:53379 is_homologous_to goodness=0.69644 hom_AA=0.994118 hom_KaKs=0.007413 hom_KnrKnc=0.493266 hom_NT=0.937255 pos=-620.1,2020.6 reliability=1.0 source_db_name=HomoloGene source_db_version=62
+Protein_UniProt:P22626 Gene_EntrezGene:3181 -codes_for goodness=0.83973 pos=-625.5,2299.1 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Enzyme_EC:4.2.1.107 Gene_EntrezGene:3295 -codes_for goodness=0.682072 pos=-787.4,-1866.2 reliability=1.0 source_db_name=KEGG source_db_version=47
+Protein_UniProt:P51659 Gene_EntrezGene:3295 -codes_for goodness=0.806363 pos=-690.8,-1675.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q59H27 Gene_EntrezGene:3295 -codes_for goodness=0.806363 pos=-632.8,-1945.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q9UBA4 Gene_EntrezGene:3295 -codes_for goodness=0.806363 pos=-553.3,-1969.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+BiologicalProcess_GO:GO:0006446 Gene_EntrezGene:3315 -participates_in evidence_code=TAS goodness=0.492365 pos=-1330.2,-622.6 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3315 Gene_EntrezGene:5464 interacts_with goodness=0.516156 pos=-1450.2,-1072.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3315 Protein_UniProt:P04792 codes_for goodness=0.9 pos=-918.8,-501.1 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3481 Gene_EntrezGene:3485 interacts_with goodness=0.534898 pos=2138.5,118.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P01344 Gene_EntrezGene:3481 -codes_for goodness=0.83973 pos=1843.2,49.5 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+MolecularFunction_GO:GO:0031994 Gene_EntrezGene:3485 -has evidence_code=IEA goodness=0.611689 pos=2223.0,78.3 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P18065 Gene_EntrezGene:3485 -codes_for goodness=0.83973 pos=2083.4,312.6 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+MolecularFunction_GO:GO:0031994 Gene_EntrezGene:3488 -has evidence_code=IPI goodness=0.68272 pos=2101.4,-110.7 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P24593 Gene_EntrezGene:3488 -codes_for goodness=0.806363 pos=1879.9,-36.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:351 Gene_EntrezGene:7042 interacts_with goodness=0.405377 pos=1048.3,-221.6 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P05067 Gene_EntrezGene:351 -codes_for goodness=0.806363 pos=699.5,-183.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q6P0P4 Gene_EntrezGene:351 -codes_for goodness=0.806363 pos=1015.6,-332.7 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:354 Enzyme_EC:3.4.21.77 codes_for goodness=0.9 pos=1857.8,2302.5 reliability=1.0 source_db_name=KEGG source_db_version=47
+Gene_EntrezGene:354 Gene_EntrezGene:5104 interacts_with goodness=0.470031 pos=1801.8,1773.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:354 Protein_UniProt:P07288 codes_for goodness=0.722467 pos=1900.7,2212.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:354 Protein_UniProt:Q15096 codes_for goodness=0.722467 pos=1691.9,2175.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:354 Protein_UniProt:Q15098 codes_for goodness=0.722467 pos=1976.9,2048.1 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q546G3 Gene_EntrezGene:354 -codes_for goodness=0.722467 pos=1864.9,2013.7 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q6LDS3 Gene_EntrezGene:354 -codes_for goodness=0.722467 pos=1984.8,2142.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:354 Protein_UniProt:Q8IXI4 codes_for goodness=0.722467 pos=1663.8,2096.5 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q8NCW4 Gene_EntrezGene:354 -codes_for goodness=0.722467 pos=1792.2,2223.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:354 Protein_UniProt:Q96A30 codes_for goodness=0.722467 pos=1762.6,2010.6 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+BiologicalProcess_GO:GO:0046881 Gene_EntrezGene:3624 -participates_in evidence_code=TAS goodness=0.554593 pos=3037.3,-598.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+BiologicalProcess_GO:GO:0046882 Gene_EntrezGene:3624 -participates_in evidence_code=NAS goodness=0.518573 pos=2993.5,-661.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+CellularComponent_GO:GO:0043512 Gene_EntrezGene:3624 -is_found_in evidence_code=IDA goodness=0.682784 pos=2820.3,-794.7 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3624 Gene_EntrezGene:3625 interacts_with goodness=0.500896 pos=2971.0,-443.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P08476 Gene_EntrezGene:3624 -codes_for goodness=0.766206 pos=2900.7,-764.5 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3624 Protein_UniProt:Q53H39 codes_for goodness=0.766206 pos=2691.3,-780.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3624 Protein_UniProt:Q5HYA2 codes_for goodness=0.766206 pos=2728.2,-599.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3624 Protein_UniProt:Q9HBP0 codes_for goodness=0.766206 pos=2696.6,-698.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3625 BiologicalProcess_GO:GO:0009605 participates_in evidence_code=IDA goodness=0.520331 pos=3158.9,-361.7 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3625 BiologicalProcess_GO:GO:0046881 participates_in evidence_code=IPI goodness=0.618994 pos=3234.9,-382.1 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+BiologicalProcess_GO:GO:0046882 Gene_EntrezGene:3625 -participates_in evidence_code=IPI goodness=0.578791 pos=3174.5,-442.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P09529 Gene_EntrezGene:3625 -codes_for goodness=0.83973 pos=3046.9,-239.7 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3625 Protein_UniProt:Q53T31 codes_for goodness=0.83973 pos=2956.1,-184.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3817 Gene_EntrezGene:5104 interacts_with goodness=0.496061 pos=1843.2,1377.5 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3817 Protein_UniProt:P20151 codes_for goodness=0.783495 pos=1842.9,1049.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3817 Protein_UniProt:Q6T775 codes_for goodness=0.783495 pos=1986.4,1234.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3958 Gene_EntrezGene:3959 interacts_with goodness=0.500896 pos=290.2,-1607.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:3958 Protein_UniProt:P17931 codes_for goodness=0.722467 pos=32.7,-1521.7 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q08380 Gene_EntrezGene:3959 -codes_for goodness=0.9 pos=342.6,-1332.5 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:5037 Gene_EntrezGene:8614 interacts_with goodness=0.51126 pos=-1791.8,-1189.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:5037 Protein_UniProt:P30086 codes_for goodness=0.83973 pos=-1565.7,-1241.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:5037 Protein_UniProt:Q9H376 codes_for goodness=0.83973 pos=-1468.5,-842.3 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P05154 Gene_EntrezGene:5104 -codes_for goodness=0.9 pos=1680.4,1292.3 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:O88569 Gene_EntrezGene:53379 -codes_for goodness=0.83973 pos=-586.1,1614.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q15181 Gene_EntrezGene:5464 -codes_for goodness=0.806363 pos=-1705.6,-1538.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:5464 Protein_UniProt:Q5SQT6 codes_for goodness=0.806363 pos=-1792.0,-1479.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P62081 Gene_EntrezGene:6201 -codes_for goodness=0.83973 pos=-1881.5,1159.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:6201 Protein_UniProt:Q57Z92 codes_for goodness=0.83973 pos=-2097.6,1184.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:6279 Gene_EntrezGene:6280 interacts_with goodness=0.490574 pos=-345.9,1617.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:6279 Gene_EntrezGene:9891 interacts_with goodness=0.498195 pos=-245.8,1736.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P05109 Gene_EntrezGene:6279 -codes_for goodness=0.806363 pos=-275.9,1409.6 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:6279 Protein_UniProt:Q9UCM6 codes_for goodness=0.806363 pos=-119.4,1679.6 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:6280 Gene_EntrezGene:7392 interacts_with goodness=0.496061 pos=-567.3,1531.0 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:6280 Gene_EntrezGene:9891 interacts_with goodness=0.55051 pos=-432.5,1666.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:6280 Protein_UniProt:P06702 codes_for goodness=0.9 pos=-426.7,1284.8 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Pathway_KEGG:hsa00220 Gene_EntrezGene:6611 -participates_in goodness=0.568614 pos=2572.5,1721.0 reliability=1.0 source_db_name=KEGG source_db_version=47
+Gene_EntrezGene:6611 Protein_UniProt:P52788 codes_for goodness=0.9 pos=2331.4,1289.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+MolecularFunction_GO:GO:0001540 Gene_EntrezGene:7042 -has evidence_code=IDA goodness=0.513809 pos=826.3,-123.4 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:P61812 Gene_EntrezGene:7042 -codes_for goodness=0.83973 pos=1126.2,-57.7 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q15853 Gene_EntrezGene:7392 -codes_for goodness=0.83973 pos=-697.0,1353.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:O76061 Gene_EntrezGene:8614 -codes_for goodness=0.83973 pos=-2056.3,-1346.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q13347 Gene_EntrezGene:8668 -codes_for goodness=0.766206 pos=-2275.7,24.7 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q53HU7 Gene_EntrezGene:8668 -codes_for goodness=0.766206 pos=-2562.9,340.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q5TFK1 Gene_EntrezGene:8668 -codes_for goodness=0.766206 pos=-2437.3,459.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:Q9P1D9 Gene_EntrezGene:8668 -codes_for goodness=0.766206 pos=-2504.6,410.2 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Gene_EntrezGene:95 Pathway_KEGG:hsa00220 participates_in goodness=0.609425 pos=2728.7,2114.2 reliability=1.0 source_db_name=KEGG source_db_version=47
+Protein_UniProt:Q03154 Gene_EntrezGene:95 -codes_for goodness=0.9 pos=2818.7,2467.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Protein_UniProt:O60285 Gene_EntrezGene:9891 -codes_for goodness=0.83973 pos=-329.1,1549.9 reliability=1.0 source_db_name=EntrezGene source_db_version=2008-08-28
+Phenotype_MIM:254090 Protein_UniProt:P12110 is_related_to goodness=0.450625 pos=386.3,-1666.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_STRING:ENSP00000009589 Protein_STRING:ENSP00000197492 functionally_associated_to goodness=0.482014 pos=-1886.4,286.7 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000009589 Protein_UniProt:P08865 functionally_associated_to goodness=0.632899 pos=-1761.2,176.2 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000009589 Protein_UniProt:P17075 subsumes goodness=0.822877 pos=-1715.4,423.6 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P60866 Protein_STRING:ENSP00000009589 -subsumes goodness=0.83973 pos=-1546.6,319.4 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000168216 Protein_STRING:ENSP00000256216 functionally_associated_to goodness=0.453434 pos=-180.6,-1368.3 reliability=0.8 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000168216 Protein_STRING:ENSP00000284981 functionally_associated_to goodness=0.501182 pos=355.8,-676.1 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000168216 Protein_UniProt:P30084 functionally_associated_to goodness=0.659373 pos=-243.9,-1267.3 reliability=0.93 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000168216 Protein_UniProt:Q99714 subsumes goodness=0.83973 pos=102.2,-867.8 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_STRING:ENSP00000220849 functionally_associated_to goodness=0.533038 pos=-2031.8,293.4 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_STRING:ENSP00000253108 functionally_associated_to goodness=0.538222 pos=-2207.2,232.2 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_STRING:ENSP00000263141 functionally_associated_to goodness=0.518064 pos=-2029.5,33.9 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_STRING:ENSP00000276682 functionally_associated_to goodness=0.543098 pos=-2138.6,233.9 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_STRING:ENSP00000311028 functionally_associated_to goodness=0.465849 pos=-1866.5,-26.0 reliability=0.91 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_STRING:ENSP00000316638 functionally_associated_to goodness=0.530026 pos=-2120.8,-74.3 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_STRING:ENSP00000323737 functionally_associated_to goodness=0.466189 pos=-1728.0,75.5 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_STRING:ENSP00000339095 functionally_associated_to goodness=0.480997 pos=-2021.9,467.8 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:O00303 functionally_associated_to goodness=0.538894 pos=-2245.6,91.9 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:O15371 functionally_associated_to goodness=0.544063 pos=-2203.9,150.7 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:O75822 functionally_associated_to goodness=0.547945 pos=-2180.4,77.8 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:P08865 functionally_associated_to goodness=0.616894 pos=-1904.3,95.3 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:P37173 functionally_associated_to goodness=0.478372 pos=-1280.7,206.4 reliability=0.95 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:Q13347 subsumes goodness=0.83973 pos=-1986.8,-16.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:Q53HU7 subsumes goodness=0.83973 pos=-2274.0,301.3 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:Q5TFK1 subsumes goodness=0.83973 pos=-2157.9,387.5 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:Q9P1D9 subsumes goodness=0.83973 pos=-2207.6,336.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000197492 Protein_UniProt:Q9UBQ5 functionally_associated_to goodness=0.522684 pos=-2175.5,4.7 reliability=0.96 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000215539 Protein_UniProt:P18065 functionally_associated_to goodness=0.441114 pos=1984.4,441.7 reliability=0.58 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000215539 Protein_UniProt:P24593 functionally_associated_to goodness=0.714908 pos=1892.6,222.7 reliability=0.94 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000216947 Protein_STRING:ENSP00000352471 functionally_associated_to goodness=0.535682 pos=-372.1,-1058.0 reliability=0.97 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P55058 Protein_STRING:ENSP00000216947 -subsumes goodness=0.869343 pos=-531.2,-1258.5 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000216953 Protein_UniProt:P04792 functionally_associated_to goodness=0.530969 pos=-235.2,-46.3 reliability=0.82 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000216953 Protein_UniProt:P16035 functionally_associated_to goodness=0.589246 pos=381.9,302.7 reliability=0.91 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000220849 Protein_UniProt:P08865 functionally_associated_to goodness=0.636267 pos=-1863.2,159.6 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000221930 Protein_STRING:ENSP00000258743 functionally_associated_to goodness=0.436836 pos=652.6,224.2 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000221930 Protein_STRING:ENSP00000284981 functionally_associated_to goodness=0.448723 pos=627.3,-47.8 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000221930 Protein_UniProt:P01137 subsumes goodness=0.806363 pos=642.5,59.2 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000221930 Protein_UniProt:P04792 functionally_associated_to goodness=0.507834 pos=-35.2,-53.4 reliability=0.8 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000221930 Protein_UniProt:P16035 functionally_associated_to goodness=0.438007 pos=592.9,299.7 reliability=0.69 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000221930 Protein_UniProt:P61812 functionally_associated_to goodness=0.450703 pos=842.8,90.8 reliability=0.71 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000242464 Protein_UniProt:P05154 functionally_associated_to goodness=0.645852 pos=1367.7,973.8 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000242464 Protein_UniProt:P16035 functionally_associated_to goodness=0.474503 pos=912.0,670.5 reliability=0.72 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000245539 Protein_UniProt:P06702 functionally_associated_to goodness=0.486898 pos=-515.2,774.7 reliability=0.7 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000245539 Protein_UniProt:P49411 functionally_associated_to goodness=0.646879 pos=-796.7,320.0 reliability=0.93 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000253108 Protein_UniProt:O75821 subsumes goodness=0.869343 pos=-2596.7,50.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000253108 Protein_UniProt:P08865 functionally_associated_to goodness=0.642456 pos=-2083.4,134.1 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000254301 Protein_STRING:ENSP00000262776 functionally_associated_to goodness=0.543066 pos=90.4,-1069.4 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000254301 Protein_STRING:ENSP00000312435 functionally_associated_to goodness=0.367239 pos=189.2,-996.4 reliability=0.69 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000254301 Protein_UniProt:P08865 functionally_associated_to goodness=0.29506 pos=-1012.1,-461.8 reliability=0.43 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000254301 Protein_UniProt:P17931 subsumes goodness=0.816559 pos=-138.9,-1166.3 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000254301 Protein_UniProt:P21741 functionally_associated_to goodness=0.576395 pos=-94.1,-871.9 reliability=0.84 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000256216 Protein_UniProt:P30084 functionally_associated_to goodness=0.647531 pos=-402.2,-1537.1 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000256216 Protein_UniProt:P51659 subsumes goodness=0.851896 pos=-511.4,-1563.1 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000256216 Protein_UniProt:Q59H27 subsumes goodness=0.851896 pos=-448.6,-1764.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000256216 Protein_UniProt:Q9UBA4 subsumes goodness=0.851896 pos=-366.2,-1807.6 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000257497 Protein_STRING:ENSP00000352471 functionally_associated_to goodness=0.439462 pos=-454.8,-911.0 reliability=0.82 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P04083 Protein_STRING:ENSP00000257497 -subsumes goodness=0.83973 pos=-438.9,-674.9 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000257497 Protein_UniProt:P31949 functionally_associated_to goodness=0.532623 pos=-860.3,-891.6 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258149 Protein_STRING:ENSP00000261769 functionally_associated_to goodness=0.402776 pos=-606.5,618.7 reliability=0.88 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258149 Protein_STRING:ENSP00000266000 functionally_associated_to goodness=0.461861 pos=-983.2,370.7 reliability=0.96 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258149 Protein_STRING:ENSP00000313819 functionally_associated_to goodness=0.477056 pos=-1255.1,521.2 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258149 Protein_UniProt:Q00987 subsumes goodness=0.806363 pos=-1155.7,618.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258743 Protein_STRING:ENSP00000284981 functionally_associated_to goodness=0.415148 pos=730.6,49.6 reliability=0.92 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258743 Protein_STRING:ENSP00000300408 functionally_associated_to goodness=0.383341 pos=456.1,394.1 reliability=0.8 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258743 Protein_STRING:ENSP00000343037 functionally_associated_to goodness=0.412139 pos=927.0,449.8 reliability=0.84 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258743 Protein_UniProt:P05231 subsumes goodness=0.869343 pos=822.6,447.4 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258743 Protein_UniProt:P16035 functionally_associated_to goodness=0.32531 pos=740.3,405.4 reliability=0.52 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000258743 Protein_UniProt:P61812 functionally_associated_to goodness=0.487965 pos=960.6,181.7 reliability=0.78 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000261769 Protein_STRING:ENSP00000337060 functionally_associated_to goodness=0.332007 pos=87.9,727.5 reliability=0.7 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000261769 Protein_UniProt:P12830 subsumes goodness=0.869343 pos=-372.6,759.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000261769 Protein_UniProt:P16035 functionally_associated_to goodness=0.434398 pos=237.6,588.1 reliability=0.68 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000261769 Protein_UniProt:P35222 functionally_associated_to goodness=0.453325 pos=-357.4,505.0 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000262584 Protein_UniProt:P08865 functionally_associated_to goodness=0.614471 pos=-1576.5,-90.2 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000262584 Protein_UniProt:P49411 functionally_associated_to goodness=0.539369 pos=-1170.0,-31.8 reliability=0.79 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000262776 Protein_STRING:ENSP00000355180 functionally_associated_to goodness=0.372772 pos=675.5,-1233.9 reliability=0.67 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:Q08380 Protein_STRING:ENSP00000262776 -subsumes goodness=0.851896 pos=292.9,-1169.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000263141 Protein_UniProt:P08865 functionally_associated_to goodness=0.618394 pos=-1908.8,-87.6 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000263141 Protein_UniProt:Q14152 subsumes goodness=0.851896 pos=-2232.3,-223.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000263273 Protein_STRING:ENSP00000284981 functionally_associated_to goodness=0.425017 pos=591.5,-440.5 reliability=0.83 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:Q02818 Protein_STRING:ENSP00000263273 -subsumes goodness=0.851896 pos=322.6,-572.3 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000265077 Protein_UniProt:P21741 functionally_associated_to goodness=0.617027 pos=296.1,-791.0 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000265077 Protein_UniProt:P23142 functionally_associated_to goodness=0.459343 pos=806.8,-710.8 reliability=0.67 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000266000 Protein_UniProt:P04792 functionally_associated_to goodness=0.664774 pos=-764.1,-10.1 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:Q9UER7 Protein_STRING:ENSP00000266000 -subsumes goodness=0.822877 pos=-901.2,367.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000270799 Protein_UniProt:P08865 functionally_associated_to goodness=0.616197 pos=-1872.6,-259.0 reliability=0.91 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P25121 Protein_STRING:ENSP00000270799 -subsumes goodness=0.788744 pos=-2057.2,-570.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P39026 Protein_STRING:ENSP00000270799 -subsumes goodness=0.788744 pos=-1991.4,-641.9 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P62913 Protein_STRING:ENSP00000270799 -subsumes goodness=0.761877 pos=-1848.8,-414.1 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:Q9Y674 Protein_STRING:ENSP00000270799 -subsumes goodness=0.788744 pos=-1886.5,-598.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P05109 Protein_STRING:ENSP00000271846 -subsumes goodness=0.869343 pos=-248.4,1273.1 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000271846 Protein_UniProt:P06702 functionally_associated_to goodness=0.62413 pos=-239.1,1181.3 reliability=0.93 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000271846 Protein_UniProt:Q9UCM6 subsumes goodness=0.869343 pos=-77.8,1492.6 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000276682 Protein_UniProt:O00303 functionally_associated_to goodness=0.572087 pos=-2426.7,117.7 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000276682 Protein_UniProt:O15371 functionally_associated_to goodness=0.57174 pos=-2413.8,185.1 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000276682 Protein_UniProt:O75822 functionally_associated_to goodness=0.570003 pos=-2337.1,90.9 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000276682 Protein_UniProt:P08865 functionally_associated_to goodness=0.648276 pos=-2007.4,110.2 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000277480 Protein_UniProt:P06702 functionally_associated_to goodness=0.453303 pos=-140.5,1161.0 reliability=0.67 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000277480 Protein_UniProt:Q5SYW0 subsumes goodness=0.83973 pos=122.1,1397.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000284981 Protein_UniProt:P05067 subsumes goodness=0.869343 pos=549.6,-197.5 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000284981 Protein_UniProt:P05121 functionally_associated_to goodness=0.43777 pos=961.4,-21.7 reliability=0.92 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000284981 Protein_UniProt:P08473 functionally_associated_to goodness=0.38495 pos=222.8,-253.5 reliability=0.8 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000284981 Protein_UniProt:P23142 functionally_associated_to goodness=0.460916 pos=855.2,-470.8 reliability=0.71 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000284981 Protein_UniProt:P61812 functionally_associated_to goodness=0.480391 pos=911.7,-104.9 reliability=0.74 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000284981 Protein_UniProt:Q6P0P4 subsumes goodness=0.869343 pos=824.4,-334.8 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000289434 Protein_STRING:ENSP00000350063 functionally_associated_to goodness=0.494587 pos=-383.2,-2304.0 reliability=0.89 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P29016 Protein_STRING:ENSP00000289434 -subsumes goodness=0.869343 pos=-575.0,-2370.2 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000294981 Protein_UniProt:P04792 functionally_associated_to goodness=0.676875 pos=-428.0,-379.0 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000294981 Protein_UniProt:P21741 functionally_associated_to goodness=0.615341 pos=-143.5,-678.7 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000295228 Protein_STRING:ENSP00000347904 functionally_associated_to goodness=0.395885 pos=2338.7,-380.4 reliability=0.7 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000295228 Protein_UniProt:P05111 functionally_associated_to goodness=0.474262 pos=2570.1,-372.2 reliability=0.84 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P09529 Protein_STRING:ENSP00000295228 -subsumes goodness=0.869343 pos=2654.8,-277.4 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000295228 Protein_UniProt:P61812 functionally_associated_to goodness=0.431991 pos=1729.9,-130.3 reliability=0.59 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000295228 Protein_UniProt:Q53T31 subsumes goodness=0.869343 pos=2560.5,-189.1 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000297185 Protein_STRING:ENSP00000300408 functionally_associated_to goodness=0.473768 pos=-49.3,331.6 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000297185 Protein_STRING:ENSP00000340019 functionally_associated_to goodness=0.497364 pos=-327.2,291.5 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000297185 Protein_UniProt:P04792 functionally_associated_to goodness=0.460465 pos=-401.8,-18.4 reliability=0.67 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P38646 Protein_STRING:ENSP00000297185 -subsumes goodness=0.851896 pos=-162.9,205.1 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000300408 Protein_STRING:ENSP00000340019 functionally_associated_to goodness=0.458156 pos=-159.1,405.4 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000300408 Protein_STRING:ENSP00000346032 functionally_associated_to goodness=0.454035 pos=197.7,478.8 reliability=0.89 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000300408 Protein_UniProt:P35232 subsumes goodness=0.83973 pos=274.2,523.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000300527 Protein_STRING:ENSP00000323534 functionally_associated_to goodness=0.379976 pos=1090.0,-987.3 reliability=0.74 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000300527 Protein_UniProt:P12110 subsumes goodness=0.869343 pos=604.7,-1304.8 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000300527 Protein_UniProt:P23142 functionally_associated_to goodness=0.421188 pos=991.9,-856.8 reliability=0.6 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000302665 Protein_UniProt:P18065 functionally_associated_to goodness=0.629243 pos=1853.1,504.4 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000302665 Protein_UniProt:P24593 functionally_associated_to goodness=0.629243 pos=1768.3,333.1 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000302665 Protein_UniProt:P52788 functionally_associated_to goodness=0.444919 pos=1980.2,776.7 reliability=0.7 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000302665 Protein_UniProt:P61812 functionally_associated_to goodness=0.394071 pos=1425.7,292.1 reliability=0.62 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000302961 Protein_UniProt:P04792 functionally_associated_to goodness=0.585024 pos=-644.8,-434.5 reliability=0.91 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000302961 Protein_UniProt:Q02790 functionally_associated_to goodness=0.520736 pos=-642.2,-766.0 reliability=0.81 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000306540 Protein_STRING:ENSP00000340019 functionally_associated_to goodness=0.476855 pos=-666.5,317.7 reliability=0.97 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000306540 Protein_UniProt:P04156 subsumes goodness=0.802126 pos=-595.9,428.9 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000306540 Protein_UniProt:P08865 functionally_associated_to goodness=0.552543 pos=-1355.7,129.9 reliability=0.83 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000307786 Protein_UniProt:P04792 functionally_associated_to goodness=0.609943 pos=-452.7,-194.0 reliability=0.96 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000307786 Protein_UniProt:P25311 functionally_associated_to goodness=0.520993 pos=60.6,-329.2 reliability=0.82 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000307786 Protein_UniProt:P49411 functionally_associated_to goodness=0.412982 pos=-637.4,-90.3 reliability=0.65 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000307940 Protein_UniProt:P08865 functionally_associated_to goodness=0.596268 pos=-1563.9,21.4 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000307940 Protein_UniProt:P49411 functionally_associated_to goodness=0.563142 pos=-1146.8,44.4 reliability=0.85 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000308541 Protein_UniProt:P05154 functionally_associated_to goodness=0.66656 pos=1630.6,878.6 reliability=0.93 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000308541 Protein_UniProt:P24593 functionally_associated_to goodness=0.48021 pos=1712.3,417.9 reliability=0.67 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000311028 Protein_UniProt:P08133 functionally_associated_to goodness=0.457074 pos=-1608.9,-454.5 reliability=0.68 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000311028 Protein_UniProt:P08865 functionally_associated_to goodness=0.625116 pos=-1760.6,-119.0 reliability=0.93 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000312435 Protein_STRING:ENSP00000340785 functionally_associated_to goodness=0.513231 pos=791.4,-1217.8 reliability=0.86 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000312435 Protein_UniProt:Q13753 functionally_associated_to goodness=0.411863 pos=756.3,-894.4 reliability=0.59 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000312435 Protein_UniProt:Q14118 subsumes goodness=0.869343 pos=683.1,-1087.6 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000313581 Protein_STRING:ENSP00000323036 functionally_associated_to goodness=0.448503 pos=2172.4,939.1 reliability=0.79 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000313581 Protein_UniProt:P05154 functionally_associated_to goodness=0.657015 pos=1779.1,991.1 reliability=0.94 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000313581 Protein_UniProt:P18065 functionally_associated_to goodness=0.468298 pos=1960.7,659.3 reliability=0.67 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000313581 Protein_UniProt:P20151 subsumes goodness=0.869343 pos=1883.7,880.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000313581 Protein_UniProt:Q6T775 subsumes goodness=0.869343 pos=2027.6,1031.6 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000313819 Protein_UniProt:P08865 functionally_associated_to goodness=0.612032 pos=-1657.1,285.1 reliability=0.91 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P46777 Protein_STRING:ENSP00000313819 -subsumes goodness=0.830413 pos=-1542.1,656.8 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000314151 Protein_UniProt:P05154 functionally_associated_to goodness=0.697907 pos=1676.0,1488.7 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000314151 Protein_UniProt:P07288 subsumes goodness=0.811125 pos=1900.0,2099.8 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000314151 Protein_UniProt:Q15096 subsumes goodness=0.811125 pos=1658.4,2015.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000314151 Protein_UniProt:Q15098 subsumes goodness=0.811125 pos=1957.2,1875.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000314151 Protein_UniProt:Q546G3 subsumes goodness=0.811125 pos=1863.0,1837.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000314151 Protein_UniProt:Q6LDS3 subsumes goodness=0.811125 pos=1952.9,1971.8 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000314151 Protein_UniProt:Q8IXI4 subsumes goodness=0.811125 pos=1619.1,1931.2 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000314151 Protein_UniProt:Q8NCW4 subsumes goodness=0.811125 pos=1745.4,2092.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000314151 Protein_UniProt:Q96A30 subsumes goodness=0.811125 pos=1699.2,1838.2 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000316638 Protein_UniProt:P08865 functionally_associated_to goodness=0.632672 pos=-1940.3,-164.3 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000316638 Protein_UniProt:P55884 subsumes goodness=0.83973 pos=-2299.5,-386.8 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000317598 Protein_UniProt:P16035 functionally_associated_to goodness=0.497117 pos=722.8,652.4 reliability=0.79 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000317598 Protein_UniProt:Q13275 functionally_associated_to goodness=0.578921 pos=821.2,956.8 reliability=0.92 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:Q15181 Protein_STRING:ENSP00000317687 -subsumes goodness=0.869343 pos=-1852.4,-1779.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000317687 Protein_UniProt:Q5SQT6 subsumes goodness=0.869343 pos=-1967.3,-1700.9 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000318195 Protein_UniProt:P21741 functionally_associated_to goodness=0.656951 pos=-260.9,-627.3 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000318195 Protein_UniProt:P49411 functionally_associated_to goodness=0.502769 pos=-735.5,-184.5 reliability=0.75 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P15309 Protein_STRING:ENSP00000323036 -subsumes goodness=0.830413 pos=2452.5,1038.8 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000323534 Protein_STRING:ENSP00000355180 functionally_associated_to goodness=0.371634 pos=1111.9,-1077.4 reliability=0.73 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000323534 Protein_UniProt:P02751 subsumes goodness=0.788744 pos=896.8,-884.4 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000323534 Protein_UniProt:P23142 functionally_associated_to goodness=0.44108 pos=1140.3,-774.1 reliability=0.67 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000323534 Protein_UniProt:P24593 functionally_associated_to goodness=0.493746 pos=1513.3,-375.6 reliability=0.75 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000323534 Protein_UniProt:Q8NCL4 functionally_associated_to goodness=0.44108 pos=1398.1,-1022.1 reliability=0.67 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000323737 Protein_UniProt:P04792 functionally_associated_to goodness=0.639325 pos=-1011.1,-134.6 reliability=0.94 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000323737 Protein_UniProt:P08865 functionally_associated_to goodness=0.61212 pos=-1622.8,-32.7 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000329390 Protein_UniProt:P04792 functionally_associated_to goodness=0.489249 pos=-649.2,-357.6 reliability=0.72 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000329390 Protein_UniProt:Q02790 functionally_associated_to goodness=0.611561 pos=-616.5,-693.7 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000332698 Protein_UniProt:P04792 functionally_associated_to goodness=0.547536 pos=-572.3,-364.0 reliability=0.8 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000332698 Protein_UniProt:Q02790 functionally_associated_to goodness=0.513315 pos=-536.0,-692.4 reliability=0.75 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P15531 Protein_STRING:ENSP00000337060 -subsumes goodness=0.851896 pos=401.0,895.6 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000337060 Protein_UniProt:P16035 functionally_associated_to goodness=0.374198 pos=516.9,624.8 reliability=0.56 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000339095 Protein_UniProt:P08865 functionally_associated_to goodness=0.631563 pos=-1897.9,397.4 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000339095 Protein_UniProt:P23821 subsumes goodness=0.794847 pos=-1958.8,833.3 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000339095 Protein_UniProt:P24818 subsumes goodness=0.794847 pos=-2042.5,833.3 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P62081 Protein_STRING:ENSP00000339095 -subsumes goodness=0.794847 pos=-1872.1,856.6 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000339095 Protein_UniProt:Q57Z92 subsumes goodness=0.83973 pos=-2099.7,891.1 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000340019 Protein_UniProt:P04792 functionally_associated_to goodness=0.478522 pos=-522.4,73.2 reliability=0.72 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000340019 Protein_UniProt:P06702 functionally_associated_to goodness=0.544983 pos=-400.5,670.4 reliability=0.82 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000340019 Protein_UniProt:P10809 subsumes goodness=0.83973 pos=-412.4,251.2 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000340019 Protein_UniProt:P49411 functionally_associated_to goodness=0.564921 pos=-695.4,194.4 reliability=0.85 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O00468 Protein_STRING:ENSP00000340785 -subsumes goodness=0.83973 pos=1104.7,-1418.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000341176 Protein_UniProt:P08865 functionally_associated_to goodness=0.622759 pos=-1789.6,277.5 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P62988 Protein_STRING:ENSP00000341176 -subsumes goodness=0.705579 pos=-1623.1,648.4 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:Q9HC84 Protein_STRING:ENSP00000343037 -subsumes goodness=0.83973 pos=1128.6,659.5 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P07355 Protein_STRING:ENSP00000346032 -subsumes goodness=0.851896 pos=119.2,329.1 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000347904 Protein_UniProt:P05111 functionally_associated_to goodness=0.51461 pos=2559.4,-488.4 reliability=0.96 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000347904 Protein_UniProt:P08476 subsumes goodness=0.83973 pos=2642.0,-630.5 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000347904 Protein_UniProt:P61812 functionally_associated_to goodness=0.444908 pos=1726.3,-259.7 reliability=0.64 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000347904 Protein_UniProt:Q53H39 subsumes goodness=0.83973 pos=2405.8,-686.6 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000347904 Protein_UniProt:Q5HYA2 subsumes goodness=0.83973 pos=2457.7,-524.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000347904 Protein_UniProt:Q9HBP0 subsumes goodness=0.83973 pos=2423.3,-609.2 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000350063 Protein_UniProt:P07602 subsumes goodness=0.851896 pos=-198.5,-2238.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000350920 Protein_UniProt:P08865 functionally_associated_to goodness=0.597738 pos=-1605.6,121.8 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000350920 Protein_UniProt:P49411 functionally_associated_to goodness=0.511398 pos=-1182.1,162.9 reliability=0.77 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P68104 Protein_STRING:ENSP00000350920 -subsumes goodness=0.764705 pos=-1420.6,400.7 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000352471 Protein_UniProt:P02647 subsumes goodness=0.83973 pos=-26.7,-674.6 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000355180 Protein_UniProt:P12109 subsumes goodness=0.869343 pos=888.5,-1418.5 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000355180 Protein_UniProt:P23142 functionally_associated_to goodness=0.403665 pos=1007.1,-949.8 reliability=0.58 source_db_name=STRING source_db_version=7.1
+Protein_STRING:ENSP00000355180 Protein_UniProt:Q8TBN2 subsumes goodness=0.869343 pos=973.9,-1462.0 reliability=1.0 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O00213 MolecularFunction_GO:GO:0001540 has evidence_code=NAS goodness=0.59993 pos=620.3,-316.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O00213 Protein_UniProt:P05067 interacts_with goodness=0.8 pos=461.7,-253.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O00303 Protein_UniProt:O15371 functionally_associated_to goodness=0.573104 pos=-2505.9,69.2 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O00303 Protein_UniProt:O60739 interacts_with goodness=0.654155 pos=-2566.6,-116.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O00303 Protein_UniProt:O75822 functionally_associated_to goodness=0.571362 pos=-2462.0,-55.1 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O00303 Protein_UniProt:P08865 functionally_associated_to goodness=0.649822 pos=-2110.5,-6.3 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O00303 Protein_UniProt:Q14152 interacts_with goodness=0.677224 pos=-2478.6,-158.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O15371 Protein_UniProt:O60739 interacts_with goodness=0.641027 pos=-2548.2,-52.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O15371 Protein_UniProt:O75822 functionally_associated_to goodness=0.576842 pos=-2458.6,17.0 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O15371 Protein_UniProt:P08865 functionally_associated_to goodness=0.649428 pos=-2095.9,59.9 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O15371 Protein_UniProt:Q14152 interacts_with goodness=0.663632 pos=-2418.6,-117.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O43294 Protein_UniProt:P04792 functionally_associated_to goodness=0.663758 pos=-774.0,-490.1 reliability=0.94 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O43294 Protein_UniProt:P40337 interacts_with goodness=0.639537 pos=-1016.7,-951.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O60285 Protein_UniProt:P05109 interacts_with goodness=0.731446 pos=-351.2,1300.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O60285 Protein_UniProt:P06702 interacts_with goodness=0.731446 pos=-348.1,1214.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O60739 Protein_UniProt:O75821 interacts_with goodness=0.641027 pos=-2698.3,-216.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O60739 Protein_UniProt:Q13347 interacts_with goodness=0.677224 pos=-2303.1,-274.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O60739 Protein_UniProt:Q14152 interacts_with goodness=0.593507 pos=-2534.5,-318.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O60739 Protein_UniProt:Q9UBQ5 interacts_with goodness=0.654155 pos=-2401.4,-191.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O75688 Protein_UniProt:P04083 interacts_with goodness=0.713001 pos=-227.5,68.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O75688 Protein_UniProt:P05109 interacts_with goodness=0.713001 pos=-248.2,870.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O75688 Protein_UniProt:P06396 interacts_with goodness=0.651902 pos=-294.3,717.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O75688 Protein_UniProt:P07355 interacts_with goodness=0.713001 pos=-57.8,441.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O75688 Protein_UniProt:P32121 interacts_with goodness=0.604675 pos=-152.5,775.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O75688 Protein_UniProt:P49407 interacts_with goodness=0.602518 pos=-103.3,724.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O75821 Protein_UniProt:P55884 interacts_with goodness=0.706531 pos=-2627.9,-292.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O75822 Protein_UniProt:P08865 functionally_associated_to goodness=0.654061 pos=-2052.8,-40.2 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O75822 Protein_UniProt:P55884 interacts_with goodness=0.746426 pos=-2448.6,-240.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O75822 Protein_UniProt:Q9UBQ5 functionally_associated_to goodness=0.571493 pos=-2316.4,-126.3 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:O88569 Protein_UniProt:P04156 interacts_with goodness=0.757241 pos=-428.2,949.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0006527 Protein_UniProt:O94760 -participates_in evidence_code=TAS goodness=0.725879 pos=2881.1,3285.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O95400 Protein_UniProt:P07237 interacts_with goodness=0.692351 pos=-1258.9,-78.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:O95400 Protein_UniProt:P81605 interacts_with goodness=0.628162 pos=-1241.4,275.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+CellularComponent_GO:GO:0031093 Protein_UniProt:P01137 -is_found_in evidence_code=EXP goodness=0.549999 pos=764.0,-235.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P01137 Protein_UniProt:P05067 interacts_with goodness=0.8 pos=565.5,-103.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P01344 Protein_UniProt:P18065 functionally_associated_to goodness=0.637421 pos=1775.9,239.6 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P01344 Protein_UniProt:P24593 functionally_associated_to goodness=0.630983 pos=1728.0,37.4 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P01344 Protein_UniProt:P61812 functionally_associated_to goodness=0.437825 pos=1382.7,43.4 reliability=0.68 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P02647 MolecularFunction_GO:GO:0001540 has evidence_code=IDA goodness=0.563504 pos=420.1,-326.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P02647 Protein_UniProt:P05067 interacts_with goodness=0.8 pos=310.9,-287.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P02675 Protein_UniProt:P05154 functionally_associated_to goodness=0.637557 pos=1462.5,685.3 reliability=0.89 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P02675 Protein_UniProt:P23142 functionally_associated_to goodness=0.479959 pos=1218.6,-175.9 reliability=0.67 source_db_name=STRING source_db_version=7.1
+BiologicalProcess_GO:GO:0009611 Protein_UniProt:P02751 -participates_in evidence_code=NAS goodness=0.581659 pos=463.5,-930.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+CellularComponent_GO:GO:0005793 Protein_UniProt:P02751 -is_found_in evidence_code=IDA goodness=0.556415 pos=199.5,-742.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P02751 CellularComponent_GO:GO:0031093 is_found_in evidence_code=EXP goodness=0.589474 pos=672.8,-636.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04004 Protein_UniProt:P05121 interacts_with goodness=0.772749 pos=1342.7,194.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04004 Protein_UniProt:P18065 functionally_associated_to goodness=0.48446 pos=1683.7,318.7 reliability=0.72 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P04004 Protein_UniProt:P24593 functionally_associated_to goodness=0.659404 pos=1631.0,176.5 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P04004 Protein_UniProt:P61812 functionally_associated_to goodness=0.450817 pos=1295.5,112.7 reliability=0.67 source_db_name=STRING source_db_version=7.1
+MolecularFunction_GO:GO:0004859 Protein_UniProt:P04083 -has evidence_code=TAS goodness=0.617782 pos=-198.3,-322.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+MolecularFunction_GO:GO:0030674 Protein_UniProt:P04083 -has evidence_code=IDA goodness=0.542427 pos=-226.3,-745.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04083 Protein_UniProt:Q92796 interacts_with goodness=0.709611 pos=-528.4,-591.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04156 Protein_UniProt:P05067 interacts_with goodness=0.757241 pos=92.6,233.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04637 Protein_UniProt:P06748 interacts_with goodness=0.609542 pos=-962.1,805.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04637 Protein_UniProt:P29590 interacts_with goodness=0.609542 pos=-894.3,767.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04637 Protein_UniProt:P62988 interacts_with goodness=0.570183 pos=-1175.8,705.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04637 Protein_UniProt:Q00987 interacts_with goodness=0.660621 pos=-1090.9,706.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04637 Protein_UniProt:Q13625 interacts_with goodness=0.616381 pos=-526.0,499.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04637 Protein_UniProt:Q8IW41 interacts_with goodness=0.660621 pos=-818.6,459.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04637 Protein_UniProt:Q93009 interacts_with goodness=0.599373 pos=-906.0,859.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04637 Protein_UniProt:Q9UER7 interacts_with goodness=0.561311 pos=-872.0,582.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0006446 Protein_UniProt:P04792 -participates_in evidence_code=TAS goodness=0.574715 pos=-965.6,-332.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0006986 Protein_UniProt:P04792 -participates_in evidence_code=TAS goodness=0.545372 pos=-532.0,-130.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04792 Protein_UniProt:P08473 interacts_with goodness=0.757241 pos=-379.5,-241.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04792 Protein_UniProt:Q13418 interacts_with goodness=0.682463 pos=-599.0,-14.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04792 Protein_UniProt:Q8IW41 functionally_associated_to goodness=0.718971 pos=-694.7,11.2 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P04792 Protein_UniProt:Q9UER7 interacts_with goodness=0.679738 pos=-769.7,131.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P04792 Protein_UniProt:Q9Y2D1 functionally_associated_to goodness=0.634069 pos=-454.4,-514.4 reliability=0.87 source_db_name=STRING source_db_version=7.1
+CellularComponent_GO:GO:0031093 Protein_UniProt:P05067 -is_found_in evidence_code=EXP goodness=0.589474 pos=581.8,-259.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05067 Protein_UniProt:P36544 interacts_with goodness=0.8 pos=357.2,-40.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05067 Protein_UniProt:P46933 interacts_with goodness=0.772749 pos=324.4,-134.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05067 Protein_UniProt:P61812 interacts_with goodness=0.8 pos=777.1,-26.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05067 Protein_UniProt:Q13625 interacts_with goodness=0.746426 pos=148.4,93.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05067 Protein_UniProt:Q92870 interacts_with goodness=0.772749 pos=395.0,38.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05067 Protein_UniProt:Q99714 interacts_with goodness=0.8 pos=314.7,-392.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05089 BiologicalProcess_GO:GO:0006527 participates_in evidence_code=TAS goodness=0.725879 pos=2881.0,3053.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05089 Protein_UniProt:Q03154 functionally_associated_to goodness=0.641534 pos=2864.0,2780.5 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P05109 Protein_UniProt:Q15853 interacts_with goodness=0.713001 pos=-541.4,1198.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05109 Protein_UniProt:Q9H8S9 interacts_with goodness=0.731446 pos=-596.1,902.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0009605 Protein_UniProt:P05111 -participates_in evidence_code=TAS goodness=0.57972 pos=2908.5,-481.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0046881 Protein_UniProt:P05111 -participates_in evidence_code=TAS goodness=0.661413 pos=2994.9,-529.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0046882 Protein_UniProt:P05111 -participates_in evidence_code=NAS goodness=0.630002 pos=2935.3,-573.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05111 CellularComponent_GO:GO:0043512 is_found_in evidence_code=IDA goodness=0.828169 pos=2801.8,-705.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P05121 Protein_UniProt:P16035 functionally_associated_to goodness=0.474974 pos=954.5,326.8 reliability=0.72 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P05121 Protein_UniProt:P24593 functionally_associated_to goodness=0.646493 pos=1483.2,129.6 reliability=0.98 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P06396 Protein_UniProt:P32121 interacts_with goodness=0.620318 pos=-323.8,926.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P06396 Protein_UniProt:P49407 interacts_with goodness=0.618105 pos=-314.2,850.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P06396 Protein_UniProt:Q00987 interacts_with goodness=0.731446 pos=-825.5,821.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P06702 Protein_UniProt:P32121 interacts_with goodness=0.678456 pos=-242.4,1048.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P06702 Protein_UniProt:P49407 interacts_with goodness=0.676036 pos=-239.0,977.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P06702 Protein_UniProt:Q13418 interacts_with goodness=0.682463 pos=-470.5,599.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P06702 Protein_UniProt:Q15853 interacts_with goodness=0.713001 pos=-529.0,1103.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P06748 Protein_UniProt:Q00987 interacts_with goodness=0.738145 pos=-1215.8,817.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P06748 Protein_UniProt:Q15853 interacts_with goodness=0.657872 pos=-885.6,1031.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P06748 Protein_UniProt:Q9NX58 interacts_with goodness=0.628412 pos=-1191.6,490.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+CellularComponent_GO:GO:0005793 Protein_UniProt:P07237 -is_found_in evidence_code=IDA goodness=0.556415 pos=-727.5,-398.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+MolecularFunction_GO:GO:0003756 Protein_UniProt:P07237 -has evidence_code=TAS goodness=0.617782 pos=-1628.6,226.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P07237 Protein_UniProt:Q13617 interacts_with goodness=0.703709 pos=-1178.6,-483.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P07237 Protein_UniProt:Q15654 interacts_with goodness=0.703709 pos=-1142.6,-152.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P07237 Protein_UniProt:Q9UHX1 interacts_with goodness=0.672717 pos=-1119.1,-268.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P07355 MolecularFunction_GO:GO:0004859 has evidence_code=TAS goodness=0.617782 pos=-42.3,38.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P07741 Protein_UniProt:P40337 interacts_with goodness=0.66209 pos=-1233.8,-1190.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P08133 Protein_UniProt:P31949 functionally_associated_to goodness=0.633358 pos=-1322.7,-783.7 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P08253 Protein_UniProt:P16035 functionally_associated_to goodness=0.647369 pos=781.1,158.8 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P08253 Protein_UniProt:Q13753 functionally_associated_to goodness=0.444657 pos=929.7,-469.4 reliability=0.68 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P08473 Protein_UniProt:Q92597 interacts_with goodness=0.618105 pos=-462.6,-282.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0009605 Protein_UniProt:P08476 -participates_in evidence_code=TAS goodness=0.667945 pos=3074.7,-652.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0046881 Protein_UniProt:P08476 -participates_in evidence_code=TAS goodness=0.762071 pos=3141.4,-692.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0046882 Protein_UniProt:P08476 -participates_in evidence_code=NAS goodness=0.725879 pos=3086.1,-747.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+CellularComponent_GO:GO:0043512 Protein_UniProt:P08476 -is_found_in evidence_code=IDA goodness=0.828169 pos=2960.1,-871.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P08865 Protein_UniProt:Q9UBQ5 functionally_associated_to goodness=0.643406 pos=-1997.0,-96.1 reliability=0.9 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P09529 BiologicalProcess_GO:GO:0009605 participates_in evidence_code=IDA goodness=0.667945 pos=3025.9,-352.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P09529 BiologicalProcess_GO:GO:0046881 participates_in evidence_code=IPI goodness=0.762071 pos=3088.4,-399.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P09529 BiologicalProcess_GO:GO:0046882 participates_in evidence_code=IPI goodness=0.725879 pos=3039.3,-451.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P10275 Protein_UniProt:P35222 interacts_with goodness=0.619191 pos=-783.9,663.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P10275 Protein_UniProt:Q00987 interacts_with goodness=0.701106 pos=-1237.1,887.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P10275 Protein_UniProt:Q06830 interacts_with goodness=0.701106 pos=-1365.1,1147.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P10275 Protein_UniProt:Q9UER7 interacts_with goodness=0.59571 pos=-1016.5,682.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P10809 BiologicalProcess_GO:GO:0006986 participates_in evidence_code=NAS goodness=0.545372 pos=-424.9,66.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P11171 Protein_UniProt:P24941 interacts_with goodness=0.604675 pos=-1075.8,-1508.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P11171 Protein_UniProt:P30084 interacts_with goodness=0.713001 pos=-732.4,-1483.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P12110 MolecularFunction_GO:GO:0030674 has evidence_code=NAS goodness=0.542427 pos=93.1,-1260.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P12110 Protein_UniProt:Q9NRI5 interacts_with goodness=0.671683 pos=141.1,-1387.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P12830 BiologicalProcess_GO:GO:0042993 participates_in evidence_code=IDA goodness=0.788838 pos=-704.8,1045.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P12830 Protein_UniProt:P35222 interacts_with goodness=0.706531 pos=-537.0,624.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P14543 Protein_UniProt:P23142 functionally_associated_to goodness=0.683317 pos=1158.2,-660.8 reliability=0.89 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P14543 Protein_UniProt:Q13753 functionally_associated_to goodness=0.560473 pos=1057.6,-742.6 reliability=0.73 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P16035 Protein_UniProt:P61812 functionally_associated_to goodness=0.27 pos=893.7,252.2 reliability=0.3 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P60866 Protein_UniProt:P17075 -subsumes goodness=0.822877 pos=-1494.9,387.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Family_InterPro:IPR009168 Protein_UniProt:P18065 -belongs_to goodness=0.547955 pos=2069.8,437.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P18065 Protein_UniProt:P24593 functionally_associated_to goodness=0.657 pos=1849.5,284.5 reliability=0.73 source_db_name=STRING source_db_version=7.1
+MolecularFunction_GO:GO:0004293 Protein_UniProt:P20151 -has evidence_code=TAS goodness=0.600834 pos=1669.3,580.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P21741 BiologicalProcess_GO:GO:0009611 participates_in evidence_code=ISS goodness=0.581659 pos=180.4,-873.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P23142 Protein_UniProt:Q92876 functionally_associated_to goodness=0.342 pos=1223.3,-463.8 reliability=0.38 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P62081 Protein_UniProt:P23821 -subsumes goodness=0.806363 pos=-1853.8,1049.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Family_InterPro:IPR009168 Protein_UniProt:P24592 -belongs_to goodness=0.547955 pos=2304.7,432.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P24593 Family_InterPro:IPR009168 belongs_to goodness=0.547955 pos=1993.9,249.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+MolecularFunction_GO:GO:0031994 Protein_UniProt:P24593 -has evidence_code=IPI goodness=0.725879 pos=1952.1,32.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P24593 Protein_UniProt:Q9GZM7 functionally_associated_to goodness=0.396 pos=1895.6,127.7 reliability=0.44 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P62081 Protein_UniProt:P24818 -subsumes goodness=0.806363 pos=-1934.4,1042.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P24941 Protein_UniProt:P30086 interacts_with goodness=0.678456 pos=-1357.2,-1442.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P24941 Protein_UniProt:P40337 interacts_with goodness=0.561499 pos=-1170.3,-1288.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P62913 Protein_UniProt:P25121 -subsumes goodness=0.811125 pos=-1930.5,-398.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Tissue_UniProt/tissue:TS-0918 Protein_UniProt:P25311 -is_expressed_in goodness=0.597483 match=exact pos=745.4,-494.3 reliability=1.0 source=CC source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P29016 Protein_UniProt:P61769 interacts_with goodness=0.8 pos=-760.5,-2432.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P29590 Protein_UniProt:Q00987 interacts_with goodness=0.738145 pos=-1151.3,783.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P29590 Protein_UniProt:Q9UER7 interacts_with goodness=0.627181 pos=-968.0,614.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P30040 Domain_InterPro:IPR012883 contains goodness=0.668767 pos=-2442.7,1343.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P30040 MolecularFunction_GO:GO:0003756 has evidence_code=TAS goodness=0.617782 pos=-2212.1,975.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P30040 Protein_UniProt:Q13162 functionally_associated_to goodness=0.441 pos=-2204.3,1451.2 reliability=0.49 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P30084 Pathway_UniProt/pathway:792 participates_in goodness=0.596767 pos=-561.1,-1513.7 reliability=1.0 source_db_name=UniProt source_db_version=14.0
+Protein_UniProt:P32121 Protein_UniProt:P49407 interacts_with goodness=0.573326 pos=-76.1,954.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P35222 Protein_UniProt:Q92597 interacts_with goodness=0.576713 pos=-628.4,57.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P35222 Protein_UniProt:Q99623 interacts_with goodness=0.611459 pos=-311.5,2.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P36544 MolecularFunction_GO:GO:0001540 has evidence_code=IPI goodness=0.567864 pos=525.3,-56.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P37173 Protein_UniProt:P61812 functionally_associated_to goodness=0.654563 pos=277.2,151.9 reliability=0.99 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:P37173 Protein_UniProt:Q9UER7 interacts_with goodness=0.643406 pos=-725.0,392.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P62913 Protein_UniProt:P39026 -subsumes goodness=0.811125 pos=-1837.6,-510.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P40337 Protein_UniProt:Q13617 interacts_with goodness=0.582398 pos=-1160.5,-930.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P46777 Protein_UniProt:Q00987 interacts_with goodness=0.757241 pos=-1425.4,819.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P46933 MolecularFunction_GO:GO:0001540 has evidence_code=ISS goodness=0.59993 pos=490.4,-166.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P49411 Protein_UniProt:Q9NX58 functionally_associated_to goodness=0.546085 pos=-1119.6,139.8 reliability=0.74 source_db_name=STRING source_db_version=7.1
+Pathway_UniProt/pathway:792 Protein_UniProt:P51659 -participates_in goodness=0.596767 pos=-675.7,-1540.1 reliability=1.0 source_db_name=UniProt source_db_version=14.0
+Protein_UniProt:P51659 Protein_UniProt:Q92597 interacts_with goodness=0.653008 pos=-721.7,-886.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P55884 Protein_UniProt:Q13347 interacts_with goodness=0.746426 pos=-2230.2,-358.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P55884 Protein_UniProt:Q14152 interacts_with goodness=0.654155 pos=-2483.5,-418.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P60709 Protein_UniProt:P84022 interacts_with goodness=0.687035 pos=-1188.6,1327.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P60709 Protein_UniProt:Q00987 interacts_with goodness=0.757241 pos=-1272.8,999.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P60866 Protein_UniProt:Q00987 interacts_with goodness=0.757241 pos=-1333.4,516.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P60866 Protein_UniProt:Q92597 interacts_with goodness=0.618105 pos=-1027.3,8.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+CellularComponent_GO:GO:0031093 Protein_UniProt:P61812 -is_found_in evidence_code=EXP goodness=0.589474 pos=961.1,-178.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+MolecularFunction_GO:GO:0001540 Protein_UniProt:P61812 -has evidence_code=IDA goodness=0.621086 pos=876.4,-27.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P62081 Protein_UniProt:Q00987 interacts_with goodness=0.8 pos=-1540.9,902.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P62913 Protein_UniProt:Q00987 interacts_with goodness=0.8 pos=-1518.6,204.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P62988 Protein_UniProt:Q00987 interacts_with goodness=0.690482 pos=-1349.2,797.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P68104 Protein_UniProt:Q00987 interacts_with goodness=0.772749 pos=-1374.2,658.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P81605 Protein_UniProt:Q00987 interacts_with goodness=0.72583 pos=-1288.3,597.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0042993 Protein_UniProt:P84022 -participates_in evidence_code=IDA goodness=0.69389 pos=-959.0,1334.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q00987 Protein_UniProt:Q93009 interacts_with goodness=0.72583 pos=-1160.1,886.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q00987 Protein_UniProt:Q9UER7 interacts_with goodness=0.679738 pos=-1088.4,590.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+MolecularFunction_GO:GO:0030674 Protein_UniProt:Q02790 -has evidence_code=TAS goodness=0.542427 pos=-347.2,-942.5 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q02818 CellularComponent_GO:GO:0005793 is_found_in evidence_code=IDA goodness=0.556415 pos=-9.2,-574.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0009605 Protein_UniProt:Q04999 -participates_in evidence_code=ISS goodness=0.623215 pos=3304.5,-519.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0046881 Protein_UniProt:Q04999 -participates_in evidence_code=ISS goodness=0.711037 pos=3382.2,-580.2 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0046882 Protein_UniProt:Q04999 -participates_in evidence_code=ISS goodness=0.677269 pos=3309.8,-598.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q06830 Protein_UniProt:Q13162 functionally_associated_to goodness=0.654731 pos=-1840.8,1505.9 reliability=0.95 source_db_name=STRING source_db_version=7.1
+Protein_UniProt:Q08380 Protein_UniProt:Q99623 interacts_with goodness=0.692351 pos=71.2,-727.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q10471 MolecularFunction_GO:GO:0004653 has evidence_code=IDA goodness=0.548473 pos=1842.8,-1506.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q13347 BiologicalProcess_GO:GO:0006446 participates_in evidence_code=TAS goodness=0.574715 pos=-1678.4,-336.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q13347 Protein_UniProt:Q14152 interacts_with goodness=0.701106 pos=-2207.5,-292.6 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q13347 Protein_UniProt:Q9NX58 interacts_with goodness=0.681072 pos=-1702.7,-17.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q13418 Protein_UniProt:Q9UHX1 interacts_with goodness=0.573881 pos=-841.5,-41.9 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q13617 Protein_UniProt:Q92796 interacts_with goodness=0.624199 pos=-967.3,-704.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q13617 Protein_UniProt:Q9H376 interacts_with goodness=0.656583 pos=-1219.5,-656.0 reliability=1.0 source_db_name=Trembl source_db_version=39.0
+Protein_UniProt:Q14152 Protein_UniProt:Q9UBQ5 interacts_with goodness=0.677224 pos=-2326.6,-215.3 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+BiologicalProcess_GO:GO:0009306 Protein_UniProt:Q14767 -participates_in evidence_code=TAS goodness=0.581659 pos=-2855.8,1369.4 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q15654 Protein_UniProt:Q9H376 interacts_with goodness=0.656583 pos=-1216.1,-327.8 reliability=1.0 source_db_name=Trembl source_db_version=39.0
+Protein_UniProt:Q15654 Protein_UniProt:Q9H8S9 interacts_with goodness=0.643406 pos=-966.8,247.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+MolecularFunction_GO:GO:0004653 Protein_UniProt:Q8NCL4 -has evidence_code=TAS goodness=0.548473 pos=1662.3,-1296.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q92870 MolecularFunction_GO:GO:0001540 has evidence_code=ISS goodness=0.59993 pos=561.1,13.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q92876 MolecularFunction_GO:GO:0004293 has evidence_code=NAS goodness=0.600834 pos=1476.5,-3.7 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q92876 Tissue_UniProt/tissue:TS-0918 is_expressed_in goodness=0.597483 match=exact pos=1237.7,-379.5 reliability=1.0 source=CC source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q93009 Protein_UniProt:Q9UER7 interacts_with goodness=0.616718 pos=-945.0,707.0 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:Q9H376 Protein_UniProt:Q9UHX1 interacts_with goodness=0.627667 pos=-1151.0,-411.6 reliability=1.0 source_db_name=Trembl source_db_version=39.0
+Protein_UniProt:Q9NRI5 Protein_UniProt:Q9Y2D1 interacts_with goodness=0.671683 pos=-206.5,-1055.8 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+Tissue_UniProt/tissue:TS-0918 Protein_UniProt:Q9UBX7 -is_expressed_in goodness=0.597483 match=exact pos=1243.7,-560.7 reliability=1.0 source=CC source_db_name=SwissProt source_db_version=56.0
+Protein_UniProt:P62913 Protein_UniProt:Q9Y674 -subsumes goodness=0.811125 pos=-1753.7,-473.1 reliability=1.0 source_db_name=SwissProt source_db_version=56.0
+# _attributes AllelicVariant_MIM:120240.0005 label=BETHLEM+MYOPATHY pinned=0 pos=556.3,-2152.6
+# _attributes BiologicalProcess_GO:GO:0006446 label=regulation+...+initiation pinned=0 pos=-1339.4,-428.2 primaryname=regulation+of+translational+initiation
+# _attributes BiologicalProcess_GO:GO:0006527 label=arginine+catabolic+process pinned=0 pos=2882.5,3174.8 shortname=arginine+breakdown
+# _attributes BiologicalProcess_GO:GO:0006986 label=response+to+unfolded+protein pinned=0 pos=-477.9,-41.9 shortname=heat+shock+protein+activity
+# _attributes BiologicalProcess_GO:GO:0009306 label=protein+secretion pinned=0 pos=-2735.0,1304.1 shortname=glycoprotein+s.
+# _attributes BiologicalProcess_GO:GO:0009605 label=response+to+external+stimulus pinned=0 pos=3104.0,-486.6 shortname=response+to+environmental+stimulus
+# _attributes BiologicalProcess_GO:GO:0009611 label=response+to+wounding pinned=0 pos=331.0,-928.5 shortname=physiological+r.
+# _attributes BiologicalProcess_GO:GO:0042993 label=positive+regulation+o. pinned=0 pos=-839.2,1217.0 primaryname=positive+regulation+of+transcription+factor+import+into+nucleus shortname=activation+of+transcription+f.
+# _attributes BiologicalProcess_GO:GO:0046881 label=positive+r...+secretion pinned=0 pos=3202.6,-544.5 primaryname=positive+regulation+of+follicle-stimulating+hormone+secretion shortname=activation+...+secretion
+# _attributes BiologicalProcess_GO:GO:0046882 label=negative+r...+secretion pinned=0 pos=3139.5,-590.8 primaryname=negative+regulation+of+follicle-stimulating+hormone+secretion shortname=inhibition+...+secretion
+# _attributes BiologicalProcess_GO:GO:0046884 label=follicle-stimulating+...+secretion pinned=0 pos=3355.9,-782.6 primaryname=follicle-stimulating+hormone+secretion shortname=FSH+secretion
+# _attributes CellularComponent_GO:GO:0005793 label=ER-Golgi+i. pinned=0 pos=-187.2,-574.4 primaryname=ER-Golgi+intermediate+compartment shortname=ERGIC
+# _attributes CellularComponent_GO:GO:0031093 label=platelet+alpha+g. pinned=0 pos=749.5,-358.3 primaryname=platelet+alpha+granule+lumen shortname=platelet+a.
+# _attributes CellularComponent_GO:GO:0043512 label=inhibin+A+complex pinned=0 pos=2859.2,-858.8
+# _attributes Domain_InterPro:IPR012883 ShortName=ERp29_N label=ERp29_N pinned=0 pos=-2564.6,1399.4 primaryname=ERp29,+N-terminal
+# _attributes Enzyme_EC:1.11.1.15 label=peroxiredoxin pinned=0 pos=-2248.2,1925.0 shortname=Prx
+# _attributes Enzyme_EC:3.4.21.77 label=semenogelase pinned=0 pos=1907.1,2414.9 shortname=seminin
+# _attributes Enzyme_EC:4.2.1.107 label=3alpha,7alpha,12alpha-trihydroxy-5beta-cholest-24-enoyl-CoA+hydratase pinned=0 pos=-822.2,-1756.2 shortname=46+kDa+hydratase+2
+# _attributes Family_InterPro:IPR009168 ShortName=IGFBP1-6 label=IGFBP1-6 pinned=0 pos=2160.5,375.6 primaryname=Insulin-like+growth+factor+binding+protein
+# _attributes Gene_EntrezGene:10549 ShortName=PRDX4 label=PRDX4 organism=hsa pinned=0 pos=-2098.0,1884.7 primaryname=peroxiredoxin+4 shortname=PRX-4
+# _attributes Gene_EntrezGene:10961 ShortName=ERP29 label=ERP29 organism=hsa pinned=0 pos=-2454.9,1063.9 primaryname=endoplasmic+reticulum+protein+29 shortname=ERP28
+# _attributes Gene_EntrezGene:116844 ShortName=LRG1 label=LRG1 organism=hsa pinned=0 pos=969.1,-1820.3 primaryname=leucine-rich+alpha-2-glycoprotein+1 shortname=LRG
+# _attributes Gene_EntrezGene:1291 ShortName=COL6A1 label=COL6A1 organism=hsa pinned=0 pos=692.3,-1870.5 primaryname=collagen,+type+VI,+alpha+1 shortname=OPLL
+# _attributes Gene_EntrezGene:1292 ShortName=COL6A2 label=COL6A2 organism=hsa pinned=0 pos=426.4,-1986.8 primaryname=collagen,+type+VI,+alpha+2 shortname=PP3610
+# _attributes Gene_EntrezGene:16324 ShortName=Inhbb label=Inhbb organism=mmu pinned=0 pos=3486.7,-287.3 primaryname=inhibin+beta-B shortname=activin
+# _attributes Gene_EntrezGene:2335 ShortName=FN1 label=FN1 organism=hsa pinned=0 pos=694.2,-1460.8 primaryname=fibronectin+1 shortname=FN
+# _attributes Gene_EntrezGene:25196 ShortName=Inhbb label=Inhbb organism=rno pinned=0 pos=3336.6,-355.7 primaryname=inhibin+beta-B shortname=activin+betaB
+# _attributes Gene_EntrezGene:301 ShortName=ANXA1 label=ANXA1 organism=hsa pinned=0 pos=-70.5,-418.1 primaryname=annexin+A1 shortname=LPC1
+# _attributes Gene_EntrezGene:302 ShortName=ANXA2 label=ANXA2 organism=hsa pinned=0 pos=62.3,-8.2 primaryname=annexin+A2 shortname=P36
+# _attributes Gene_EntrezGene:3181 ShortName=HNRNPA2B1 label=HNRNPA2B1 organism=hsa pinned=0 pos=-624.3,2172.2 primaryname=heterogeneous+nuclear+ribonucleoprotein+A2/B1 shortname=RNPA2
+# _attributes Gene_EntrezGene:3295 ShortName=HSD17B4 label=HSD17B4 organism=hsa pinned=0 pos=-673.6,-1863.7 primaryname=hydroxysteroid+(17-beta)+dehydrogenase+4 shortname=DBP
+# _attributes Gene_EntrezGene:3315 ShortName=HSPB1 label=HSPB1 organism=hsa pinned=0 pos=-1232.0,-761.2 primaryname=heat+shock+27kDa+protein+1 shortname=HSP27
+# _attributes Gene_EntrezGene:3481 ShortName=IGF2 label=IGF2 organism=hsa pinned=0 pos=2025.3,60.2 primaryname=insulin-like+growth+factor+2+(somatomedin+A) shortname=INSIGF
+# _attributes Gene_EntrezGene:3485 ShortName=IGFBP2 label=IGFBP2 organism=hsa pinned=0 pos=2189.6,198.3 primaryname=insulin-like+growth+factor+binding+protein+2,+36kDa shortname=IBP2
+# _attributes Gene_EntrezGene:3488 ShortName=IGFBP5 label=IGFBP5 organism=hsa pinned=0 pos=1993.5,-116.9 primaryname=insulin-like+growth+factor+binding+protein+5 shortname=IBP5
+# _attributes Gene_EntrezGene:351 ShortName=APP label=APP organism=hsa pinned=0 pos=919.7,-259.9 primaryname=amyloid+beta+(A4)+precursor+protein shortname=AAA
+# _attributes Gene_EntrezGene:354 ShortName=KLK3 label=KLK3 organism=hsa pinned=0 pos=1828.2,2102.6 primaryname=kallikrein-related+peptidase+3 shortname=PSA
+# _attributes Gene_EntrezGene:3624 ShortName=INHBA label=INHBA organism=hsa pinned=0 pos=2857.2,-658.8 primaryname=inhibin,+beta+A shortname=EDF
+# _attributes Gene_EntrezGene:3625 ShortName=INHBB label=INHBB organism=hsa pinned=0 pos=3144.0,-293.0 primaryname=inhibin,+beta+B shortname=Inhibin,+beta-2
+# _attributes Gene_EntrezGene:3817 ShortName=KLK2 label=KLK2 organism=hsa pinned=0 pos=1879.1,1226.7 primaryname=kallikrein-related+peptidase+2 shortname=hK2
+# _attributes Gene_EntrezGene:3958 ShortName=LGALS3 label=LGALS3 organism=hsa pinned=0 pos=149.7,-1605.2 primaryname=lectin,+galactoside-binding,+soluble,+3 shortname=GAL3
+# _attributes Gene_EntrezGene:3959 ShortName=LGALS3BP label=LGALS3BP organism=hsa pinned=0 pos=446.1,-1553.6 primaryname=lectin,+galactoside-binding,+soluble,+3+binding+protein shortname=90K
+# _attributes Gene_EntrezGene:5037 ShortName=PEBP1 label=PEBP1 organism=hsa pinned=0 pos=-1618.6,-1085.7 primaryname=phosphatidylethanolamine+binding+protein+1 shortname=PBP
+# _attributes Gene_EntrezGene:5104 ShortName=SERPINA5 label=SERPINA5 organism=hsa pinned=0 pos=1779.3,1503.2 primaryname=serpin+peptidase+inhibitor,+clade+A+(alpha-1+antiproteinase,+antitrypsin),+member+5 shortname=PCI
+# _attributes Gene_EntrezGene:53379 ShortName=Hnrnpa2b1 label=Hnrnpa2b1 organism=mmu pinned=0 pos=-610.2,1838.4 primaryname=heterogeneous+nuclear+ribonucleoprotein+A2/B1 shortname=Hnrpa2
+# _attributes Gene_EntrezGene:5464 ShortName=PPA1 label=PPA1 organism=hsa pinned=0 pos=-1648.5,-1359.3 primaryname=pyrophosphatase+(inorganic)+1 shortname=PP
+# _attributes Gene_EntrezGene:6201 ShortName=RPS7 label=RPS7 organism=hsa pinned=0 pos=-1993.5,1227.0 primaryname=ribosomal+protein+S7
+# _attributes Gene_EntrezGene:6279 ShortName=S100A8 label=S100A8 organism=hsa pinned=0 pos=-229.9,1612.5 primaryname=S100+calcium+binding+protein+A8 shortname=P8
+# _attributes Gene_EntrezGene:6280 ShortName=S100A9 label=S100A9 organism=hsa pinned=0 pos=-445.4,1523.6 primaryname=S100+calcium+binding+protein+A9 shortname=P14
+# _attributes Gene_EntrezGene:6611 ShortName=SMS label=SMS organism=hsa pinned=0 pos=2463.4,1510.8 primaryname=spermine+synthase shortname=SRS
+# _attributes Gene_EntrezGene:7042 ShortName=TGFB2 label=TGFB2 organism=hsa pinned=0 pos=1026.0,-119.9 primaryname=transforming+growth+factor,+beta+2 shortname=MGC116892
+# _attributes Gene_EntrezGene:7392 ShortName=USF2 label=USF2 organism=hsa pinned=0 pos=-669.0,1480.8 primaryname=upstream+transcription+factor+2,+c-fos+interacting shortname=FIP
+# _attributes Gene_EntrezGene:8614 ShortName=STC2 label=STC2 organism=hsa pinned=0 pos=-1937.0,-1275.7 primaryname=stanniocalcin+2 shortname=STCRP
+# _attributes Gene_EntrezGene:8668 ShortName=EIF3I label=EIF3I organism=hsa pinned=0 pos=-2460.0,287.3 primaryname=eukaryotic+translation+initiation+factor+3,+subunit+I shortname=TRIP1
+# _attributes Gene_EntrezGene:95 ShortName=ACY1 label=ACY1 organism=hsa pinned=0 pos=2780.6,2296.2 primaryname=aminoacylase+1 shortname=ACY1D
+# _attributes Gene_EntrezGene:9891 ShortName=NUAK1 label=NUAK1 organism=hsa pinned=0 pos=-336.1,1700.3 primaryname=NUAK+family,+SNF1-like+kinase,+1 shortname=ARK5
+# _attributes MolecularFunction_GO:GO:0001540 label=beta-amyloid+binding pinned=0 pos=629.5,-147.7
+# _attributes MolecularFunction_GO:GO:0003756 label=protein+disulfide+i. pinned=0 pos=-2054.5,680.1 primaryname=protein+disulfide+isomerase+activity shortname=S-S+rearrangase+a.
+# _attributes MolecularFunction_GO:GO:0004293 label=tissue+kallikrein+activity pinned=0 pos=1569.0,307.7 shortname=padutin
+# _attributes MolecularFunction_GO:GO:0004653 label=polypeptide+N. pinned=0 pos=1761.0,-1409.2 primaryname=polypeptide+N-acetylgalactosaminyltransferase+activity shortname=protein-UDP+a.
+# _attributes MolecularFunction_GO:GO:0004859 label=phospholipase+i. pinned=0 pos=-71.2,-171.5 primaryname=phospholipase+inhibitor+activity
+# _attributes MolecularFunction_GO:GO:0030674 label=protein+binding,+b. pinned=0 pos=-141.2,-1003.7 primaryname=protein+binding,+bridging shortname=protein-protein+adaptor
+# _attributes MolecularFunction_GO:GO:0031994 label=insulin-like+growth+f. pinned=0 pos=2116.8,-6.5 primaryname=insulin-like+growth+factor+I+binding shortname=IGF-I+binding
+# _attributes Pathway_KEGG:hsa00220 label=Urea+cycle+and+metabolism+o. organism=hsa pinned=0 pos=2660.2,1922.2 primaryname=Urea+cycle+and+metabolism+of+amino+groups+-+Homo+sapiens+(human)
+# _attributes Pathway_UniProt/pathway:792 label=Lipid+m...+beta-oxidation pinned=0 pos=-612.9,-1604.1 primaryname=Lipid+metabolism;+fatty+acid+beta-oxidation
+# _attributes Phenotype_MIM:158810 label=BETHLEM+MYOPATHY pinned=0 pos=660.0,-2115.4 shortname=MUSCULAR+DYSTROPHY,+B.
+# _attributes Phenotype_MIM:254090 ShortName=UCMD label=UCMD pinned=0 pos=449.5,-1824.4 primaryname=ULLRICH+CONGENITAL+MUSCULAR+DYSTROPHY shortname=ULLRICH+DISEASE
+# _attributes Protein_STRING:ENSP00000009589 organism=hsa pinned=0 pos=-1731.9,318.3
+# _attributes Protein_STRING:ENSP00000168216 organism=hsa pinned=0 pos=6.2,-1055.2
+# _attributes Protein_STRING:ENSP00000197492 organism=hsa pinned=0 pos=-2023.4,173.7
+# _attributes Protein_STRING:ENSP00000215539 organism=hsa pinned=0 pos=1969.3,338.3
+# _attributes Protein_STRING:ENSP00000216947 organism=hsa pinned=0 pos=-452.7,-1176.9
+# _attributes Protein_STRING:ENSP00000216953 organism=hsa pinned=0 pos=90.2,139.9
+# _attributes Protein_STRING:ENSP00000220849 organism=hsa pinned=0 pos=-1953.3,253.8
+# _attributes Protein_STRING:ENSP00000221930 organism=hsa pinned=0 pos=536.5,108.3
+# _attributes Protein_STRING:ENSP00000242464 organism=hsa pinned=0 pos=1141.5,848.4
+# _attributes Protein_STRING:ENSP00000245539 organism=hsa pinned=0 pos=-659.4,552.8
+# _attributes Protein_STRING:ENSP00000253108 organism=hsa pinned=0 pos=-2339.6,168.5
+# _attributes Protein_STRING:ENSP00000254301 organism=hsa pinned=0 pos=-212.6,-913.2
+# _attributes Protein_STRING:ENSP00000256216 organism=hsa pinned=0 pos=-361.0,-1621.5
+# _attributes Protein_STRING:ENSP00000257497 organism=hsa pinned=0 pos=-603.8,-858.3
+# _attributes Protein_STRING:ENSP00000258149 organism=hsa pinned=0 pos=-997.2,529.6
+# _attributes Protein_STRING:ENSP00000258743 organism=hsa pinned=0 pos=759.2,305.3
+# _attributes Protein_STRING:ENSP00000261769 organism=hsa pinned=0 pos=-189.6,648.0
+# _attributes Protein_STRING:ENSP00000262584 organism=hsa pinned=0 pos=-1379.0,-102.9
+# _attributes Protein_STRING:ENSP00000262776 organism=hsa pinned=0 pos=382.1,-1171.1
+# _attributes Protein_STRING:ENSP00000263141 organism=hsa pinned=0 pos=-2074.5,-131.4
+# _attributes Protein_STRING:ENSP00000263273 organism=hsa pinned=0 pos=475.4,-543.3
+# _attributes Protein_STRING:ENSP00000265077 organism=hsa pinned=0 pos=558.6,-761.8
+# _attributes Protein_STRING:ENSP00000266000 organism=hsa pinned=0 pos=-884.0,209.6
+# _attributes Protein_STRING:ENSP00000270799 organism=hsa pinned=0 pos=-1942.4,-498.2
+# _attributes Protein_STRING:ENSP00000271846 organism=hsa pinned=0 pos=-156.8,1341.9
+# _attributes Protein_STRING:ENSP00000276682 organism=hsa pinned=0 pos=-2270.1,172.3
+# _attributes Protein_STRING:ENSP00000277480 organism=hsa pinned=0 pos=12.0,1290.9
+# _attributes Protein_STRING:ENSP00000284981 organism=hsa pinned=0 pos=666.0,-257.5
+# _attributes Protein_STRING:ENSP00000289434 organism=hsa pinned=0 pos=-479.0,-2337.5
+# _attributes Protein_STRING:ENSP00000294981 organism=hsa pinned=0 pos=-296.3,-543.3
+# _attributes Protein_STRING:ENSP00000295228 organism=hsa pinned=0 pos=2353.5,-255.7
+# _attributes Protein_STRING:ENSP00000297185 organism=hsa pinned=0 pos=-245.8,193.9
+# _attributes Protein_STRING:ENSP00000300408 organism=hsa pinned=0 pos=131.5,429.8
+# _attributes Protein_STRING:ENSP00000300527 organism=hsa pinned=0 pos=895.7,-1070.8
+# _attributes Protein_STRING:ENSP00000302665 organism=hsa pinned=0 pos=1746.0,498.9
+# _attributes Protein_STRING:ENSP00000302961 organism=hsa pinned=0 pos=-676.6,-621.0
+# _attributes Protein_STRING:ENSP00000306540 organism=hsa pinned=0 pos=-894.3,288.5
+# _attributes Protein_STRING:ENSP00000307786 organism=hsa pinned=0 pos=-312.3,-202.7
+# _attributes Protein_STRING:ENSP00000307940 organism=hsa pinned=0 pos=-1363.9,18.1
+# _attributes Protein_STRING:ENSP00000308541 organism=hsa pinned=0 pos=1675.2,672.2
+# _attributes Protein_STRING:ENSP00000311028 organism=hsa pinned=0 pos=-1732.6,-223.0
+# _attributes Protein_STRING:ENSP00000312435 organism=hsa pinned=0 pos=583.1,-1050.8
+# _attributes Protein_STRING:ENSP00000313581 organism=hsa pinned=0 pos=1979.9,900.5
+# _attributes Protein_STRING:ENSP00000313819 organism=hsa pinned=0 pos=-1503.7,495.4
+# _attributes Protein_STRING:ENSP00000314151 organism=hsa pinned=0 pos=1784.4,1898.2
+# _attributes Protein_STRING:ENSP00000316638 organism=hsa pinned=0 pos=-2122.9,-248.7
+# _attributes Protein_STRING:ENSP00000317598 organism=hsa pinned=0 pos=776.1,822.6
+# _attributes Protein_STRING:ENSP00000317687 organism=hsa pinned=0 pos=-1952.5,-1801.1
+# _attributes Protein_STRING:ENSP00000318195 organism=hsa pinned=0 pos=-500.4,-421.1
+# _attributes Protein_STRING:ENSP00000323036 organism=hsa pinned=0 pos=2328.5,991.4
+# _attributes Protein_STRING:ENSP00000323534 organism=hsa pinned=0 pos=1216.5,-854.6
+# _attributes Protein_STRING:ENSP00000323737 organism=hsa pinned=0 pos=-1446.5,-45.0
+# _attributes Protein_STRING:ENSP00000329390 organism=hsa pinned=0 pos=-661.7,-537.9
+# _attributes Protein_STRING:ENSP00000332698 organism=hsa pinned=0 pos=-565.9,-531.2
+# _attributes Protein_STRING:ENSP00000337060 organism=hsa pinned=0 pos=336.8,761.0
+# _attributes Protein_STRING:ENSP00000339095 organism=hsa pinned=0 pos=-1980.3,701.1
+# _attributes Protein_STRING:ENSP00000340019 organism=hsa pinned=0 pos=-453.7,330.2
+# _attributes Protein_STRING:ENSP00000340785 organism=hsa pinned=0 pos=968.7,-1329.8
+# _attributes Protein_STRING:ENSP00000341176 organism=hsa pinned=0 pos=-1742.3,506.2
+# _attributes Protein_STRING:ENSP00000343037 organism=hsa pinned=0 pos=1043.0,564.9
+# _attributes Protein_STRING:ENSP00000346032 organism=hsa pinned=0 pos=212.7,390.5
+# _attributes Protein_STRING:ENSP00000347904 organism=hsa pinned=0 pos=2336.8,-506.8
+# _attributes Protein_STRING:ENSP00000350063 organism=hsa pinned=0 pos=-287.5,-2270.5
+# _attributes Protein_STRING:ENSP00000350920 organism=hsa pinned=0 pos=-1421.6,229.5
+# _attributes Protein_STRING:ENSP00000352471 organism=hsa pinned=0 pos=-277.5,-880.6
+# _attributes Protein_STRING:ENSP00000355180 organism=hsa pinned=0 pos=940.0,-1228.1
+# _attributes Protein_UniProt:O00213 ShortName=APBB1_HUMAN label=APBB1_HUMAN organism=hsa pinned=0 pos=529.4,-349.9 primaryname=Amyloid+beta+A4+precursor+protein-binding+family+B+member+1 shortname=Fe65+protein
+# _attributes Protein_UniProt:O00303 ShortName=EIF3F_HUMAN label=EIF3F_HUMAN organism=hsa pinned=0 pos=-2395.5,-15.2 primaryname=Eukaryotic+translation+initiation+factor+3+subunit+F shortname=eIF3f
+# _attributes Protein_UniProt:O00468 ShortName=AGRIN_HUMAN label=AGRIN_HUMAN organism=hsa pinned=0 pos=1196.7,-1489.2 primaryname=Agrin queryname=Protein_UniProt:O00468 queryset=start
+# _attributes Protein_UniProt:O15371 ShortName=EIF3D_HUMAN label=EIF3D_HUMAN organism=hsa pinned=0 pos=-2377.8,47.5 primaryname=Eukaryotic+translation+initiation+factor+3+subunit+D shortname=eIF3d
+# _attributes Protein_UniProt:O43294 ShortName=TGFI1_HUMAN label=TGFI1_HUMAN organism=hsa pinned=0 pos=-895.6,-745.9 primaryname=Transforming+growth+factor+beta-1-induced+transcript+1+protein shortname=Hic-5
+# _attributes Protein_UniProt:O60285 ShortName=NUAK1_HUMAN label=NUAK1_HUMAN organism=hsa pinned=0 pos=-353.1,1394.9 primaryname=NUAK+family+SNF1-like+kinase+1 shortname=AMPK-related+protein+k.
+# _attributes Protein_UniProt:O60739 ShortName=EIF1B_HUMAN label=EIF1B_HUMAN organism=hsa pinned=0 pos=-2535.2,-211.4 primaryname=Eukaryotic+translation+initiation+factor+1b shortname=eIF1b
+# _attributes Protein_UniProt:O75688 ShortName=PPM1B_HUMAN label=PPM1B_HUMAN organism=hsa pinned=0 pos=-174.7,579.8 primaryname=Protein+phosphatase+1B shortname=PP2C-beta
+# _attributes Protein_UniProt:O75821 ShortName=EIF3G_HUMAN label=EIF3G_HUMAN organism=hsa pinned=0 pos=-2691.9,-128.7 primaryname=Eukaryotic+translation+initiation+factor+3+subunit+G shortname=eIF3g
+# _attributes Protein_UniProt:O75822 ShortName=EIF3J_HUMAN label=EIF3J_HUMAN organism=hsa pinned=0 pos=-2319.6,-44.4 primaryname=Eukaryotic+translation+initiation+factor+3+subunit+J shortname=eIF3j
+# _attributes Protein_UniProt:O76061 ShortName=STC2_HUMAN label=STC2_HUMAN organism=hsa pinned=0 pos=-2149.5,-1403.4 primaryname=Stanniocalcin-2 queryname=Protein_UniProt:O76061 queryset=start shortname=STC-2
+# _attributes Protein_UniProt:O88569 ShortName=ROA2_MOUSE label=ROA2_MOUSE organism=mmu pinned=0 pos=-525.1,1311.2 primaryname=Heterogeneous+nuclear+ribonucleoproteins+A2/B1 shortname=hnRNP+A2+/+hnRNP+B1
+# _attributes Protein_UniProt:O94760 ShortName=DDAH1_HUMAN label=DDAH1_HUMAN organism=hsa pinned=0 pos=2877.9,3382.5 primaryname=N(G),N(G)-dimethylarginine+dimethylaminohydrolase+1 queryname=Protein_UniProt:O94760 queryset=start shortname=DDAHI
+# _attributes Protein_UniProt:O95400 ShortName=CD2B2_HUMAN label=CD2B2_HUMAN organism=hsa pinned=0 pos=-1258.9,85.3 primaryname=CD2+antigen+cytoplasmic+tail-binding+protein+2 shortname=CD2
+# _attributes Protein_UniProt:P01137 ShortName=TGFB1_HUMAN label=TGFB1_HUMAN organism=hsa pinned=0 pos=694.2,-85.3 primaryname=Transforming+growth+factor+beta-1 shortname=TGF-beta-1
+# _attributes Protein_UniProt:P01344 ShortName=IGF2_HUMAN label=IGF2_HUMAN organism=hsa pinned=0 pos=1659.1,87.5 primaryname=Insulin-like+growth+factor+II shortname=IGF-II
+# _attributes Protein_UniProt:P02647 ShortName=APOA1_HUMAN label=APOA1_HUMAN organism=hsa pinned=0 pos=218.9,-448.9 primaryname=Apolipoprotein+A-I shortname=Apo-AI
+# _attributes Protein_UniProt:P02675 ShortName=FIBB_HUMAN label=FIBB_HUMAN organism=hsa pinned=0 pos=1330.5,283.2 primaryname=Fibrinogen+beta+chain
+# _attributes Protein_UniProt:P02750 ShortName=A2GL_HUMAN label=A2GL_HUMAN organism=hsa pinned=0 pos=1119.0,-2033.9 primaryname=Leucine-rich+alpha-2-glycoprotein queryname=Protein_UniProt:P02750 queryset=start shortname=LRG
+# _attributes Protein_UniProt:P02751 ShortName=FINC_HUMAN label=FINC_HUMAN organism=hsa pinned=0 pos=578.9,-878.5 primaryname=Fibronectin queryname=Protein_UniProt:P02751 queryset=start shortname=FN
+# _attributes Protein_UniProt:P04004 ShortName=VTNC_HUMAN label=VTNC_HUMAN organism=hsa pinned=0 pos=1493.1,210.7 primaryname=Vitronectin shortname=V75
+# _attributes Protein_UniProt:P04083 ShortName=ANXA1_HUMAN label=ANXA1_HUMAN organism=hsa pinned=0 pos=-307.5,-447.5 primaryname=Annexin+A1 queryname=Protein_UniProt:P04083 queryset=start shortname=p35
+# _attributes Protein_UniProt:P04156 ShortName=PRIO_HUMAN label=PRIO_HUMAN organism=hsa pinned=0 pos=-289.8,543.8 primaryname=Major+prion+protein shortname=PrP
+# _attributes Protein_UniProt:P04637 ShortName=P53_HUMAN label=P53_HUMAN organism=hsa pinned=0 pos=-890.3,669.5 primaryname=Cellular+tumor+antigen+p53 shortname=Antigen+NY-CO-13
+# _attributes Protein_UniProt:P04792 ShortName=HSPB1_HUMAN label=HSPB1_HUMAN organism=hsa pinned=0 pos=-595.3,-202.1 primaryname=Heat+shock+protein+beta-1 queryname=Protein_UniProt:P04792 queryset=start shortname=HspB1
+# _attributes Protein_UniProt:P05067 ShortName=A4_HUMAN label=A4_HUMAN organism=hsa pinned=0 pos=425.3,-110.5 primaryname=Amyloid+beta+A4+protein queryname=Protein_UniProt:P05067 queryset=start shortname=APP
+# _attributes Protein_UniProt:P05089 ShortName=ARGI1_HUMAN label=ARGI1_HUMAN organism=hsa pinned=0 pos=2875.3,2921.8 primaryname=Arginase-1 shortname=Type+I+arginase
+# _attributes Protein_UniProt:P05109 ShortName=S10A8_HUMAN label=S10A8_HUMAN organism=hsa pinned=0 pos=-380.4,1148.1 primaryname=Protein+S100-A8 queryname=Protein_UniProt:P05109 queryset=start shortname=P8
+# _attributes Protein_UniProt:P05111 ShortName=INHA_HUMAN label=INHA_HUMAN organism=hsa pinned=0 pos=2782.7,-515.0 primaryname=Inhibin+alpha+chain
+# _attributes Protein_UniProt:P05121 ShortName=PAI1_HUMAN label=PAI1_HUMAN organism=hsa pinned=0 pos=1182.6,163.7 primaryname=Plasminogen+activator+inhibitor+1 shortname=PAI
+# _attributes Protein_UniProt:P05154 ShortName=IPSP_HUMAN label=IPSP_HUMAN organism=hsa pinned=0 pos=1594.6,1063.2 primaryname=Plasma+serine+protease+inhibitor queryname=Protein_UniProt:P05154 queryset=start shortname=PCI
+# _attributes Protein_UniProt:P05231 ShortName=IL6_HUMAN label=IL6_HUMAN organism=hsa pinned=0 pos=856.6,552.1 primaryname=Interleukin-6 queryname=Protein_UniProt:P05231 queryset=start shortname=CDF
+# _attributes Protein_UniProt:P06396 ShortName=GELS_HUMAN label=GELS_HUMAN organism=hsa pinned=0 pos=-460.0,841.2 primaryname=Gelsolin shortname=ADF
+# _attributes Protein_UniProt:P06702 ShortName=S10A9_HUMAN label=S10A9_HUMAN organism=hsa pinned=0 pos=-363.3,1002.3 primaryname=Protein+S100-A9 queryname=Protein_UniProt:P06702 queryset=start shortname=P14
+# _attributes Protein_UniProt:P06748 ShortName=NPM_HUMAN label=NPM_HUMAN organism=hsa pinned=0 pos=-1070.7,806.4 primaryname=Nucleophosmin shortname=NPM
+# _attributes Protein_UniProt:P07237 ShortName=PDIA1_HUMAN label=PDIA1_HUMAN organism=hsa pinned=0 pos=-1198.6,-202.4 primaryname=Protein+disulfide-isomerase queryname=Protein_UniProt:P07237 queryset=start shortname=PDI
+# _attributes Protein_UniProt:P07288 ShortName=KLK3_HUMAN label=KLK3_HUMAN organism=hsa pinned=0 pos=1972.0,2261.1 primaryname=Prostate-specific+antigen queryname=Protein_UniProt:P07288 queryset=start shortname=PSA
+# _attributes Protein_UniProt:P07355 ShortName=ANXA2_HUMAN label=ANXA2_HUMAN organism=hsa pinned=0 pos=7.0,242.5 primaryname=Annexin+A2 queryname=Protein_UniProt:P07355 queryset=start shortname=p36
+# _attributes Protein_UniProt:P07602 ShortName=SAP_HUMAN label=SAP_HUMAN organism=hsa pinned=0 pos=-109.5,-2206.9 primaryname=Proactivator+polypeptide queryname=Protein_UniProt:P07602 queryset=start
+# _attributes Protein_UniProt:P07741 ShortName=APT_HUMAN label=APT_HUMAN organism=hsa pinned=0 pos=-1306.1,-1267.0 primaryname=Adenine+phosphoribosyltransferase queryname=Protein_UniProt:P07741 queryset=start shortname=APRT
+# _attributes Protein_UniProt:P08133 ShortName=ANXA6_HUMAN label=ANXA6_HUMAN organism=hsa pinned=0 pos=-1488.9,-641.7 primaryname=Annexin+A6 queryname=Protein_UniProt:P08133 queryset=start shortname=P68
+# _attributes Protein_UniProt:P08253 ShortName=MMP2_HUMAN label=MMP2_HUMAN organism=hsa pinned=0 pos=871.8,-176.6 primaryname=72+kDa+type+IV+collagenase shortname=MMP-2
+# _attributes Protein_UniProt:P08473 ShortName=NEP_HUMAN label=NEP_HUMAN organism=hsa pinned=0 pos=-185.4,-247.5 primaryname=Neprilysin shortname=NEP
+# _attributes Protein_UniProt:P08476 ShortName=INHBA_HUMAN label=INHBA_HUMAN organism=hsa pinned=0 pos=2965.5,-734.5 primaryname=Inhibin+beta+A+chain queryname=Protein_UniProt:P08476 queryset=start shortname=EDF
+# _attributes Protein_UniProt:P08865 ShortName=RSSA_HUMAN label=RSSA_HUMAN organism=hsa pinned=0 pos=-1786.8,24.1 primaryname=40S+ribosomal+protein+SA queryname=Protein_UniProt:P08865 queryset=start shortname=p40
+# _attributes Protein_UniProt:P09529 ShortName=INHBB_HUMAN label=INHBB_HUMAN organism=hsa pinned=0 pos=2937.8,-324.9 primaryname=Inhibin+beta+B+chain queryname=Protein_UniProt:P09529 queryset=start shortname=Activin+beta-B+chain
+# _attributes Protein_UniProt:P10275 ShortName=ANDR_HUMAN label=ANDR_HUMAN organism=hsa pinned=0 pos=-1091.4,888.8 primaryname=Androgen+receptor shortname=Dihydrotestosterone+receptor
+# _attributes Protein_UniProt:P10809 ShortName=CH60_HUMAN label=CH60_HUMAN organism=hsa pinned=0 pos=-396.7,160.1 primaryname=60+kDa+heat+shock+protein,+mitochondrial queryname=Protein_UniProt:P10809 queryset=start shortname=CPN60
+# _attributes Protein_UniProt:P11171 ShortName=41_HUMAN label=41_HUMAN organism=hsa pinned=0 pos=-918.4,-1516.6 primaryname=Protein+4.1 shortname=4.1R
+# _attributes Protein_UniProt:P12109 ShortName=CO6A1_HUMAN label=CO6A1_HUMAN organism=hsa pinned=0 pos=833.0,-1580.9 primaryname=Collagen+alpha-1(VI)+chain queryname=Protein_UniProt:P12109 queryset=start
+# _attributes Protein_UniProt:P12110 ShortName=CO6A2_HUMAN label=CO6A2_HUMAN organism=hsa pinned=0 pos=318.7,-1477.5 primaryname=Collagen+alpha-2(VI)+chain queryname=Protein_UniProt:P12110 queryset=start
+# _attributes Protein_UniProt:P12830 ShortName=CADH1_HUMAN label=CADH1_HUMAN organism=hsa pinned=0 pos=-559.5,832.9 primaryname=Epithelial+cadherin queryname=Protein_UniProt:P12830 queryset=start shortname=CD324
+# _attributes Protein_UniProt:P14543 ShortName=NID1_HUMAN label=NID1_HUMAN organism=hsa pinned=0 pos=1197.4,-735.1 primaryname=Nidogen-1 shortname=Entactin
+# _attributes Protein_UniProt:P15309 ShortName=PPAP_HUMAN label=PPAP_HUMAN organism=hsa pinned=0 pos=2550.6,1078.2 primaryname=Prostatic+acid+phosphatase queryname=Protein_UniProt:P15309 queryset=start
+# _attributes Protein_UniProt:P15531 ShortName=NDKA_HUMAN label=NDKA_HUMAN organism=hsa pinned=0 pos=449.2,997.0 primaryname=Nucleoside+diphosphate+kinase+A queryname=Protein_UniProt:P15531 queryset=start shortname=GAAD
+# _attributes Protein_UniProt:P16035 ShortName=TIMP2_HUMAN label=TIMP2_HUMAN organism=hsa pinned=0 pos=665.6,438.8 primaryname=Metalloproteinase+inhibitor+2 queryname=Protein_UniProt:P16035 queryset=start shortname=TIMP-2
+# _attributes Protein_UniProt:P17075 pinned=0 pos=-1616.4,446.9
+# _attributes Protein_UniProt:P17931 ShortName=LEG3_HUMAN label=LEG3_HUMAN organism=hsa pinned=0 pos=-56.1,-1373.5 primaryname=Galectin-3 queryname=Protein_UniProt:P17931 queryset=start shortname=L-31
+# _attributes Protein_UniProt:P18065 ShortName=IBP2_HUMAN label=IBP2_HUMAN organism=hsa pinned=0 pos=1904.0,404.8 primaryname=Insulin-like+growth+factor-binding+protein+2 queryname=Protein_UniProt:P18065 queryset=start shortname=IBP-2
+# _attributes Protein_UniProt:P20151 ShortName=KLK2_HUMAN label=KLK2_HUMAN organism=hsa pinned=0 pos=1784.3,830.4 primaryname=Kallikrein-2 queryname=Protein_UniProt:P20151 queryset=start shortname=hGK-1
+# _attributes Protein_UniProt:P21741 ShortName=MK_HUMAN label=MK_HUMAN organism=hsa pinned=0 pos=-0.7,-776.5 primaryname=Midkine queryname=Protein_UniProt:P21741 queryset=start shortname=MK
+# _attributes Protein_UniProt:P22626 ShortName=ROA2_HUMAN label=ROA2_HUMAN organism=hsa pinned=0 pos=-625.2,2402.5 primaryname=Heterogeneous+nuclear+ribonucleoproteins+A2/B1 queryname=Protein_UniProt:P22626 queryset=start shortname=hnRNP+A2+/+hnRNP+B1
+# _attributes Protein_UniProt:P23142 ShortName=FBLN1_HUMAN label=FBLN1_HUMAN organism=hsa pinned=0 pos=1048.9,-625.5 primaryname=Fibulin-1 queryname=Protein_UniProt:P23142 queryset=start
+# _attributes Protein_UniProt:P23821 pinned=0 pos=-1916.7,954.0
+# _attributes Protein_UniProt:P24592 ShortName=IBP6_HUMAN label=IBP6_HUMAN organism=hsa pinned=0 pos=2409.6,473.6 primaryname=Insulin-like+growth+factor-binding+protein+6 queryname=Protein_UniProt:P24592 queryset=start shortname=IBP-6
+# _attributes Protein_UniProt:P24593 ShortName=IBP5_HUMAN label=IBP5_HUMAN organism=hsa pinned=0 pos=1768.2,127.5 primaryname=Insulin-like+growth+factor-binding+protein+5 queryname=Protein_UniProt:P24593 queryset=start shortname=IBP-5
+# _attributes Protein_UniProt:P24818 pinned=0 pos=-2026.8,970.3
+# _attributes Protein_UniProt:P24941 ShortName=CDK2_HUMAN label=CDK2_HUMAN organism=hsa pinned=0 pos=-1208.2,-1436.2 primaryname=Cell+division+protein+kinase+2 shortname=p33+protein+kinase
+# _attributes Protein_UniProt:P25121 pinned=0 pos=-2040.2,-487.2
+# _attributes Protein_UniProt:P25311 ShortName=ZA2G_HUMAN label=ZA2G_HUMAN organism=hsa pinned=0 pos=407.7,-440.3 primaryname=Zinc-alpha-2-glycoprotein queryname=Protein_UniProt:P25311 queryset=start shortname=Zn-alpha-2-GP
+# _attributes Protein_UniProt:P29016 ShortName=CD1B_HUMAN label=CD1B_HUMAN organism=hsa pos=-670.9443,-2402.9139 primaryname=T-cell+surface+glycoprotein+CD1b shortname=CD1b
+# _attributes Protein_UniProt:P29590 ShortName=PML_HUMAN label=PML_HUMAN organism=hsa pinned=0 pos=-1014.7,752.6 primaryname=Probable+transcription+factor+PML shortname=RING+finger+protein+71
+# _attributes Protein_UniProt:P30040 ShortName=ERP29_HUMAN label=ERP29_HUMAN organism=hsa pinned=0 pos=-2309.1,1245.3 primaryname=Endoplasmic+reticulum+protein+ERp29 queryname=Protein_UniProt:P30040 queryset=start shortname=ERp28
+# _attributes Protein_UniProt:P30048 ShortName=PRDX3_HUMAN label=PRDX3_HUMAN organism=hsa pinned=0 pos=-2370.3,2129.7 primaryname=Thioredoxin-dependent+peroxide+reductase,+mitochondrial queryname=Protein_UniProt:P30048 queryset=start shortname=AOP-1
+# _attributes Protein_UniProt:P30084 ShortName=ECHM_HUMAN label=ECHM_HUMAN organism=hsa pinned=0 pos=-477.4,-1436.9 primaryname=Enoyl-CoA+hydratase,+mitochondrial queryname=Protein_UniProt:P30084 queryset=start shortname=SCEH
+# _attributes Protein_UniProt:P30086 ShortName=PEBP1_HUMAN label=PEBP1_HUMAN organism=hsa pinned=0 pos=-1479.3,-1368.9 primaryname=Phosphatidylethanolamine-binding+protein+1 queryname=Protein_UniProt:P30086 queryset=start shortname=RKIP
+# _attributes Protein_UniProt:P31949 ShortName=S10AB_HUMAN label=S10AB_HUMAN organism=hsa pinned=0 pos=-1096.9,-856.1 primaryname=Protein+S100-A11 shortname=MLN+70
+# _attributes Protein_UniProt:P32121 ShortName=ARRB2_HUMAN label=ARRB2_HUMAN organism=hsa pinned=0 pos=-175.0,942.9 primaryname=Beta-arrestin-2 shortname=Arrestin+beta-2
+# _attributes Protein_UniProt:P35222 ShortName=CTNB1_HUMAN label=CTNB1_HUMAN organism=hsa pinned=0 pos=-524.8,368.6 primaryname=Catenin+beta-1 shortname=Beta-catenin
+# _attributes Protein_UniProt:P35232 ShortName=PHB_HUMAN label=PHB_HUMAN organism=hsa pinned=0 pos=350.8,610.9 primaryname=Prohibitin queryname=Protein_UniProt:P35232 queryset=start
+# _attributes Protein_UniProt:P36544 ShortName=ACHA7_HUMAN label=ACHA7_HUMAN organism=hsa pinned=0 pos=443.5,-14.9 primaryname=Neuronal+acetylcholine+receptor+subunit+alpha-7
+# _attributes Protein_UniProt:P37173 ShortName=TGFR2_HUMAN label=TGFR2_HUMAN organism=hsa pinned=0 pos=-554.3,245.4 primaryname=TGF-beta+receptor+type-2 shortname=TGFR-2
+# _attributes Protein_UniProt:P38646 ShortName=GRP75_HUMAN label=GRP75_HUMAN organism=hsa pinned=0 pos=-85.7,194.7 primaryname=Stress-70+protein,+mitochondrial queryname=Protein_UniProt:P38646 queryset=start shortname=MOT
+# _attributes Protein_UniProt:P39026 pinned=0 pos=-1908.1,-667.0
+# _attributes Protein_UniProt:P40337 ShortName=VHL_HUMAN label=VHL_HUMAN organism=hsa pinned=0 pos=-1142.8,-1098.9 primaryname=Von+Hippel-Lindau+disease+tumor+suppressor shortname=pVHL
+# _attributes Protein_UniProt:P46777 ShortName=RL5_HUMAN label=RL5_HUMAN organism=hsa pinned=0 pos=-1537.9,783.1 primaryname=60S+ribosomal+protein+L5
+# _attributes Protein_UniProt:P46933 ShortName=APBB1_RAT label=APBB1_RAT organism=rno pinned=0 pos=383.9,-190.9 primaryname=Amyloid+beta+A4+precursor+protein-binding+family+B+member+1 shortname=Fe65+protein
+# _attributes Protein_UniProt:P49407 ShortName=ARRB1_HUMAN label=ARRB1_HUMAN organism=hsa pinned=0 pos=-155.9,872.0 primaryname=Beta-arrestin-1 shortname=Arrestin+beta-1
+# _attributes Protein_UniProt:P49411 ShortName=EFTU_HUMAN label=EFTU_HUMAN organism=hsa pinned=0 pos=-930.0,66.2 primaryname=Elongation+factor+Tu,+mitochondrial queryname=Protein_UniProt:P49411 queryset=start shortname=P43
+# _attributes Protein_UniProt:P51659 ShortName=DHB4_HUMAN label=DHB4_HUMAN organism=hsa pinned=0 pos=-682.2,-1423.6 primaryname=Peroxisomal+multifunctional+enzyme+type+2 queryname=Protein_UniProt:P51659 queryset=start shortname=DBP
+# _attributes Protein_UniProt:P52788 ShortName=SPSY_HUMAN label=SPSY_HUMAN organism=hsa pinned=0 pos=2174.7,1048.2 primaryname=Spermine+synthase queryname=Protein_UniProt:P52788 queryset=start shortname=SPMSY
+# _attributes Protein_UniProt:P55058 ShortName=PLTP_HUMAN label=PLTP_HUMAN organism=hsa pinned=0 pos=-613.6,-1305.1 primaryname=Phospholipid+transfer+protein queryname=Protein_UniProt:P55058 queryset=start shortname=Lipid+transfer+p.
+# _attributes Protein_UniProt:P55884 ShortName=EIF3B_HUMAN label=EIF3B_HUMAN organism=hsa pinned=0 pos=-2428.5,-362.7 primaryname=Eukaryotic+translation+initiation+factor+3+subunit+B shortname=eIF3b
+# _attributes Protein_UniProt:P60709 ShortName=ACTB_HUMAN label=ACTB_HUMAN organism=hsa pinned=0 pos=-1242.9,1191.6 primaryname=Actin,+cytoplasmic+1 shortname=Beta-actin
+# _attributes Protein_UniProt:P60866 ShortName=RS20_HUMAN label=RS20_HUMAN organism=hsa pinned=0 pos=-1338.3,305.2 primaryname=40S+ribosomal+protein+S20
+# _attributes Protein_UniProt:P61769 ShortName=B2MG_HUMAN label=B2MG_HUMAN organism=hsa pinned=0 pos=-850.2,-2462.5 primaryname=Beta-2-microglobulin queryname=Protein_UniProt:P61769 queryset=start
+# _attributes Protein_UniProt:P61812 ShortName=TGFB2_HUMAN label=TGFB2_HUMAN organism=hsa pinned=0 pos=1094.2,29.0 primaryname=Transforming+growth+factor+beta-2 queryname=Protein_UniProt:P61812 queryset=start shortname=G-TSF
+# _attributes Protein_UniProt:P62081 ShortName=RS7_HUMAN label=RS7_HUMAN organism=hsa pinned=0 pos=-1789.0,1002.1 primaryname=40S+ribosomal+protein+S7
+# _attributes Protein_UniProt:P62913 ShortName=RL11_HUMAN label=RL11_HUMAN organism=hsa pinned=0 pos=-1766.2,-302.1 primaryname=60S+ribosomal+protein+L11 shortname=CLL-associated+a.
+# _attributes Protein_UniProt:P62988 ShortName=UBIQ_HUMAN label=UBIQ_HUMAN organism=hsa pinned=0 pos=-1415.9,726.2 primaryname=Ubiquitin
+# _attributes Protein_UniProt:P68104 ShortName=EF1A1_HUMAN label=EF1A1_HUMAN organism=hsa pinned=0 pos=-1431.5,551.6 primaryname=Elongation+factor+1-alpha+1 shortname=EF-Tu
+# _attributes Protein_UniProt:P81605 ShortName=DCD_HUMAN label=DCD_HUMAN organism=hsa pinned=0 pos=-1272.2,425.1 primaryname=Dermcidin shortname=Preproteolysin
+# _attributes Protein_UniProt:P84022 ShortName=SMAD3_HUMAN label=SMAD3_HUMAN organism=hsa pinned=0 pos=-1081.4,1384.4 primaryname=Mothers+against+decapentaplegic+homolog+3 shortname=Mad3
+# _attributes Protein_UniProt:Q00987 ShortName=MDM2_HUMAN label=MDM2_HUMAN organism=hsa pinned=0 pos=-1258.9,722.5 primaryname=E3+ubiquitin-protein+ligase+Mdm2 queryname=Protein_UniProt:Q00987 queryset=start shortname=Hdm2
+# _attributes Protein_UniProt:Q02790 ShortName=FKBP4_HUMAN label=FKBP4_HUMAN organism=hsa pinned=0 pos=-521.0,-806.9 primaryname=FK506-binding+protein+4 queryname=Protein_UniProt:Q02790 queryset=start shortname=HBI
+# _attributes Protein_UniProt:Q02818 ShortName=NUCB1_HUMAN label=NUCB1_HUMAN organism=hsa pinned=0 pos=152.8,-574.4 primaryname=Nucleobindin-1 queryname=Protein_UniProt:Q02818 queryset=start shortname=CALNUC
+# _attributes Protein_UniProt:Q03154 ShortName=ACY1_HUMAN label=ACY1_HUMAN organism=hsa pinned=0 pos=2845.8,2629.3 primaryname=Aminoacylase-1 queryname=Protein_UniProt:Q03154 queryset=start shortname=ACY-1
+# _attributes Protein_UniProt:Q04999 ShortName=INHBB_MOUSE label=INHBB_MOUSE organism=mmu pinned=0 pos=3433.8,-518.0 primaryname=Inhibin+beta+B+chain shortname=Activin+beta-B+chain
+# _attributes Protein_UniProt:Q06830 ShortName=PRDX1_HUMAN label=PRDX1_HUMAN organism=hsa pinned=0 pos=-1606.2,1350.2 primaryname=Peroxiredoxin-1 shortname=PAG
+# _attributes Protein_UniProt:Q08380 ShortName=LG3BP_HUMAN label=LG3BP_HUMAN organism=hsa pinned=0 pos=231.9,-1076.4 primaryname=Galectin-3-binding+protein queryname=Protein_UniProt:Q08380 queryset=start shortname=MAC2BP
+# _attributes Protein_UniProt:Q10471 ShortName=GALT2_HUMAN label=GALT2_HUMAN organism=hsa pinned=0 pos=1908.5,-1586.6 primaryname=Polypeptide+N-acetylgalactosaminyltransferase+2 queryname=Protein_UniProt:Q10471 queryset=start shortname=GalNAc-T2
+# _attributes Protein_UniProt:Q13162 ShortName=PRDX4_HUMAN label=PRDX4_HUMAN organism=hsa pinned=0 pos=-2072.9,1619.9 primaryname=Peroxiredoxin-4 queryname=Protein_UniProt:Q13162 queryset=start shortname=Prx-IV
+# _attributes Protein_UniProt:Q13275 ShortName=SEM3F_HUMAN label=SEM3F_HUMAN organism=hsa pinned=0 pos=856.1,1060.3 primaryname=Semaphorin-3F queryname=Protein_UniProt:Q13275 queryset=start shortname=Sema+IV
+# _attributes Protein_UniProt:Q13347 ShortName=EIF3I_HUMAN label=EIF3I_HUMAN organism=hsa pinned=0 pos=-2045.0,-198.5 primaryname=Eukaryotic+translation+initiation+factor+3+subunit+I queryname=Protein_UniProt:Q13347 queryset=start shortname=eIF3i
+# _attributes Protein_UniProt:Q13418 ShortName=ILK_HUMAN label=ILK_HUMAN organism=hsa pinned=0 pos=-623.7,193.0 primaryname=Integrin-linked+protein+kinase shortname=ILK-1
+# _attributes Protein_UniProt:Q13617 ShortName=CUL2_HUMAN label=CUL2_HUMAN organism=hsa pinned=0 pos=-1127.2,-708.3 primaryname=Cullin-2 shortname=CUL-2
+# _attributes Protein_UniProt:Q13625 ShortName=ASPP2_HUMAN label=ASPP2_HUMAN organism=hsa pinned=0 pos=-186.6,311.9 primaryname=Apoptosis-stimulating+of+p53+protein+2 shortname=Bbp
+# _attributes Protein_UniProt:Q13753 ShortName=LAMC2_HUMAN label=LAMC2_HUMAN organism=hsa pinned=0 pos=914.2,-709.0 primaryname=Laminin+subunit+gamma-2 queryname=Protein_UniProt:Q13753 queryset=start shortname=Laminin+B2t+chain
+# _attributes Protein_UniProt:Q14118 ShortName=DAG1_HUMAN label=DAG1_HUMAN organism=hsa pinned=0 pos=770.7,-1120.3 primaryname=Dystroglycan queryname=Protein_UniProt:Q14118 queryset=start shortname=Dystrophin-associated+g.
+# _attributes Protein_UniProt:Q14152 ShortName=EIF3A_HUMAN label=EIF3A_HUMAN organism=hsa pinned=0 pos=-2392.5,-277.5 primaryname=Eukaryotic+translation+initiation+factor+3+subunit+A shortname=eIF3a
+# _attributes Protein_UniProt:Q14767 ShortName=LTBP2_HUMAN label=LTBP2_HUMAN organism=hsa pinned=0 pos=-2946.9,1424.7 primaryname=Latent-transforming+growth+factor+beta-binding+protein+2 queryname=Protein_UniProt:Q14767 queryset=start shortname=LTBP-2
+# _attributes Protein_UniProt:Q15096 ShortName=Q15096_HUMAN label=Q15096_HUMAN organism=hsa pinned=0 pos=1593.3,2142.9 primaryname=APS+protein
+# _attributes Protein_UniProt:Q15098 ShortName=Q15098_HUMAN label=Q15098_HUMAN organism=hsa pinned=0 pos=2048.3,1948.0 primaryname=APS+protein
+# _attributes Protein_UniProt:Q15181 ShortName=IPYR_HUMAN label=IPYR_HUMAN organism=hsa pinned=0 pos=-1773.4,-1679.2 primaryname=Inorganic+pyrophosphatase queryname=Protein_UniProt:Q15181 queryset=start shortname=PPase
+# _attributes Protein_UniProt:Q15654 ShortName=TRIP6_HUMAN label=TRIP6_HUMAN organism=hsa pinned=0 pos=-1094.2,-69.1 primaryname=Thyroid+receptor-interacting+protein+6 shortname=ZRP-1
+# _attributes Protein_UniProt:Q15853 ShortName=USF2_HUMAN label=USF2_HUMAN organism=hsa pinned=0 pos=-682.4,1182.6 primaryname=Upstream+stimulatory+factor+2 shortname=FIP
+# _attributes Protein_UniProt:Q53H39 ShortName=Q53H39_HUMAN label=Q53H39_HUMAN organism=hsa pinned=0 pos=2534.0,-785.4 primaryname=Inhibin+beta+A+subunit+variant
+# _attributes Protein_UniProt:Q53HU7 ShortName=Q53HU7_HUMAN label=Q53HU7_HUMAN organism=hsa pinned=0 pos=-2443.1,354.9 primaryname=Eukaryotic+translation+initiation+factor+3,+subunit+2+beta,+36kDa+variant
+# _attributes Protein_UniProt:Q53T31 ShortName=Q53T31_HUMAN label=Q53T31_HUMAN organism=hsa pinned=0 pos=2764.8,-162.3 primaryname=Putative+uncharacterized+protein+INHBB+(Inhibin,+beta+B)+(Activin+AB+beta+polypeptide)
+# _attributes Protein_UniProt:Q546G3 ShortName=Q546G3_HUMAN label=Q546G3_HUMAN organism=hsa pinned=0 pos=1881.3,1919.4 primaryname=Prostate+specific+antigen+(Kallikrein+3,+(Prostate+specific+antigen),+isoform+CRA_m)+(cDNA,+FLJ93384,+Homo+sapiens+kallikrein+3,+(prostate+specific+antigen)+(KLK3),transcript+variant+1,+mRNA)
+# _attributes Protein_UniProt:Q57Z92 ShortName=Q57Z92_HUMAN label=Q57Z92_HUMAN organism=hsa pinned=0 pos=-2129.5,1060.1 primaryname=Putative+uncharacterized+protein+RPS7+(Ribosomal+protein+S7,+isoform+CRA_b)+(cDNA,+FLJ92055,+Homo+sapiens+ribosomal+protein+S7+(RPS7),+mRNA)
+# _attributes Protein_UniProt:Q59H27 ShortName=Q59H27_HUMAN label=Q59H27_HUMAN organism=hsa pinned=0 pos=-535.1,-1872.7 primaryname=Hydroxysteroid+(17-beta)+dehydrogenase+4+variant
+# _attributes Protein_UniProt:Q5HYA2 ShortName=Q5HYA2_HUMAN label=Q5HYA2_HUMAN organism=hsa pinned=0 pos=2590.5,-561.9 primaryname=Putative+uncharacterized+protein+DKFZp686A06204
+# _attributes Protein_UniProt:Q5SQT6 ShortName=Q5SQT6_HUMAN label=Q5SQT6_HUMAN organism=hsa pinned=0 pos=-1899.0,-1593.8 primaryname=Pyrophosphatase+(Inorganic)+1
+# _attributes Protein_UniProt:Q5SYW0 ShortName=Q5SYW0_HUMAN label=Q5SYW0_HUMAN organism=hsa pinned=0 pos=199.8,1481.4 primaryname=Lipocalin+2+(Lipocalin+2+(Oncogene+24p3),+isoform+CRA_c) queryname=Protein_UniProt:Q5SYW0 queryset=start
+# _attributes Protein_UniProt:Q5TFK1 ShortName=Q5TFK1_HUMAN label=Q5TFK1_HUMAN organism=hsa pinned=0 pos=-2305.6,485.3 primaryname=Eukaryotic+translation+initiation+factor+3,+subunit+I
+# _attributes Protein_UniProt:Q6LDS3 ShortName=Q6LDS3_HUMAN label=Q6LDS3_HUMAN organism=hsa pinned=0 pos=2059.0,2070.8 primaryname=APS+protein
+# _attributes Protein_UniProt:Q6P0P4 ShortName=Q6P0P4_HUMAN label=Q6P0P4_HUMAN organism=hsa pinned=0 pos=939.6,-371.9 primaryname=APP+protein
+# _attributes Protein_UniProt:Q6T775 ShortName=Q6T775_HUMAN label=Q6T775_HUMAN organism=hsa pinned=0 pos=2043.1,1149.9 primaryname=Kallikrein+2+isoform+5+preproprotein
+# _attributes Protein_UniProt:Q8IW41 ShortName=MAPK5_HUMAN label=MAPK5_HUMAN organism=hsa pinned=0 pos=-767.1,235.3 primaryname=MAP+kinase-activated+protein+kinase+5 shortname=MAPKAP+kinase+5
+# _attributes Protein_UniProt:Q8IXI4 ShortName=Q8IXI4_HUMAN label=Q8IXI4_HUMAN organism=hsa pinned=0 pos=1560.9,2028.9 primaryname=Prostate+specific+antigen+(Kallikrein+3,+(Prostate+specific+antigen),+isoform+CRA_h)
+# _attributes Protein_UniProt:Q8NCL4 ShortName=GALT6_HUMAN label=GALT6_HUMAN organism=hsa pinned=0 pos=1543.1,-1168.1 primaryname=Polypeptide+N-acetylgalactosaminyltransferase+6 queryname=Protein_UniProt:Q8NCL4 queryset=start shortname=GalNAc-T6
+# _attributes Protein_UniProt:Q8NCW4 ShortName=Q8NCW4_HUMAN label=Q8NCW4_HUMAN organism=hsa pinned=0 pos=1715.5,2247.1 primaryname=Prostate+specific+antigen
+# _attributes Protein_UniProt:Q8TBN2 ShortName=Q8TBN2_HUMAN label=Q8TBN2_HUMAN organism=hsa pinned=0 pos=949.2,-1650.7 primaryname=Putative+uncharacterized+protein
+# _attributes Protein_UniProt:Q92597 ShortName=NDRG1_HUMAN label=NDRG1_HUMAN organism=hsa pinned=0 pos=-728.6,-286.7 primaryname=Protein+NDRG1 shortname=RTP
+# _attributes Protein_UniProt:Q92796 ShortName=DLG3_HUMAN label=DLG3_HUMAN organism=hsa pinned=0 pos=-769.8,-673.7 primaryname=Disks+large+homolog+3 shortname=XLMR
+# _attributes Protein_UniProt:Q92870 ShortName=APBB2_HUMAN label=APBB2_HUMAN organism=hsa pinned=0 pos=465.2,97.4 primaryname=Amyloid+beta+A4+precursor+protein-binding+family+B+member+2 shortname=Fe65-like+protein
+# _attributes Protein_UniProt:Q92876 ShortName=KLK6_HUMAN label=KLK6_HUMAN organism=hsa pinned=0 pos=1343.4,-273.3 primaryname=Kallikrein-6 queryname=Protein_UniProt:Q92876 queryset=start shortname=SP59
+# _attributes Protein_UniProt:Q93009 ShortName=UBP7_HUMAN label=UBP7_HUMAN organism=hsa pinned=0 pos=-1006.2,881.1 primaryname=Ubiquitin+carboxyl-terminal+hydrolase+7 shortname=Ubiquitin+t.
+# _attributes Protein_UniProt:Q96A30 ShortName=Q96A30_HUMAN label=Q96A30_HUMAN organism=hsa pinned=0 pos=1702.3,1923.8 primaryname=Putative+preproPSA-RP2+(Kallikrein+3,+(Prostate+specific+antigen),+isoform+CRA_e)
+# _attributes Protein_UniProt:Q99623 ShortName=PHB2_HUMAN label=PHB2_HUMAN organism=hsa pinned=0 pos=-117.3,-364.1 primaryname=Prohibitin-2 shortname=D-prohibitin
+# _attributes Protein_UniProt:Q99714 ShortName=HCD2_HUMAN label=HCD2_HUMAN organism=hsa pinned=0 pos=219.3,-641.4 primaryname=3-hydroxyacyl-CoA+dehydrogenase+type-2 shortname=Type+II+HADH
+# _attributes Protein_UniProt:Q9GZM7 ShortName=TINAL_HUMAN label=TINAL_HUMAN organism=hsa pinned=0 pos=2001.1,145.2 primaryname=Tubulointerstitial+nephritis+antigen-like queryname=Protein_UniProt:Q9GZM7 queryset=start shortname=OLRG-2
+# _attributes Protein_UniProt:Q9H376 ShortName=Q9H376_HUMAN label=Q9H376_HUMAN organism=hsa pinned=0 pos=-1281.6,-561.0 primaryname=PRO0720
+# _attributes Protein_UniProt:Q9H8S9 ShortName=MOL1B_HUMAN label=MOL1B_HUMAN organism=hsa pinned=0 pos=-766.6,579.7 primaryname=Mps+one+binder+kinase+activator-like+1B shortname=Mob1A
+# _attributes Protein_UniProt:Q9HBP0 ShortName=Q9HBP0_HUMAN label=Q9HBP0_HUMAN organism=hsa pinned=0 pos=2545.6,-682.9 primaryname=Putative+uncharacterized+protein
+# _attributes Protein_UniProt:Q9HC84 ShortName=MUC5B_HUMAN label=MUC5B_HUMAN organism=hsa pinned=0 pos=1200.0,732.0 primaryname=Mucin-5B queryname=Protein_UniProt:Q9HC84 queryset=start shortname=MUC-5B
+# _attributes Protein_UniProt:Q9NRI5 ShortName=DISC1_HUMAN label=DISC1_HUMAN organism=hsa pinned=0 pos=-35.0,-1244.3 primaryname=Disrupted+in+schizophrenia+1+protein
+# _attributes Protein_UniProt:Q9NX58 ShortName=LYAR_HUMAN label=LYAR_HUMAN organism=hsa pinned=0 pos=-1356.0,203.8 primaryname=Cell+growth-regulating+nucleolar+protein
+# _attributes Protein_UniProt:Q9P1D9 ShortName=Q9P1D9_HUMAN label=Q9P1D9_HUMAN organism=hsa pinned=0 pos=-2366.2,410.6 primaryname=PRO2242
+# _attributes Protein_UniProt:Q9UBA4 ShortName=Q9UBA4_HUMAN label=Q9UBA4_HUMAN organism=hsa pinned=0 pos=-432.6,-1937.6 primaryname=Peroxisomal+multifunctional+protein+2
+# _attributes Protein_UniProt:Q9UBQ5 ShortName=EIF3K_HUMAN label=EIF3K_HUMAN organism=hsa pinned=0 pos=-2229.9,-131.5 primaryname=Eukaryotic+translation+initiation+factor+3+subunit+K shortname=eIF3k
+# _attributes Protein_UniProt:Q9UBX7 ShortName=KLK11_HUMAN label=KLK11_HUMAN organism=hsa pinned=0 pos=1359.4,-608.0 primaryname=Kallikrein-11 queryname=Protein_UniProt:Q9UBX7 queryset=start shortname=hK11
+# _attributes Protein_UniProt:Q9UCM6 ShortName=Q9UCM6_HUMAN label=Q9UCM6_HUMAN organism=hsa pinned=0 pos=-44.7,1615.6 primaryname=Calcium-binding+myeloid+related+protein+MRP-8+homolog
+# _attributes Protein_UniProt:Q9UER7 ShortName=DAXX_HUMAN label=DAXX_HUMAN organism=hsa pinned=0 pos=-909.9,495.5 primaryname=Death+domain-associated+protein+6 shortname=Daxx
+# _attributes Protein_UniProt:Q9UHX1 ShortName=PUF60_HUMAN label=PUF60_HUMAN organism=hsa pinned=0 pos=-1017.7,-244.0 primaryname=Poly(U)-binding-splicing+factor+PUF60 shortname=RoBP1
+# _attributes Protein_UniProt:Q9Y2D1 ShortName=ATF5_HUMAN label=ATF5_HUMAN organism=hsa pinned=0 pos=-341.4,-797.2 primaryname=Cyclic+AMP-dependent+transcription+factor+ATF-5 shortname=Transcription+factor+ATFx
+# _attributes Protein_UniProt:Q9Y674 pinned=0 pos=-1787.3,-601.8
+# _attributes Tissue_UniProt/tissue:TS-0918 label=Seminal+plasma pinned=0 pos=1075.2,-486.7
