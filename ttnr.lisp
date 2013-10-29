@@ -42,7 +42,9 @@
 	       (bmg:remove-node graph current-node))))))
 
 
-(defun randomized-bfs (start-node goal-node &optional (visited (make-hash-table :test #'eq)) (edges-not-exist (make-hash-table :test #'eq)))
+(defun randomized-bfs (start-node goal-node
+		       &optional (visited (make-hash-table :test #'eq))
+		       (edges-not-exist (make-hash-table :test #'eq)))
   (declare (optimize (speed 3) (safety 0) (space 0) (debug 0) (compilation-speed 0)))
   (let ((queue (list start-node)))
     (loop while queue do
@@ -75,4 +77,5 @@
       ;; 	  (format *error-output* "~a~%" iterations-so-far))
       (if (funcall implementation from to)
 	    (incf succesful-iterations)))
-    (values (format nil "~f" (/ succesful-iterations iteration-count)) succesful-iterations iteration-count)))
+    (values (format nil "~f" (/ succesful-iterations iteration-count))
+	    succesful-iterations iteration-count)))

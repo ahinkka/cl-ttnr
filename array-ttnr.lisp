@@ -119,7 +119,8 @@
       ;; 	  (format *error-output* "~a~%" iterations-so-far))
       (if (lazy-random-bfs graph from to)
 	  (incf succesful-iterations)))
-    (values (format nil "~f" (/ succesful-iterations iteration-count)) succesful-iterations iteration-count)))
+    (values (format nil "~f" (/ succesful-iterations iteration-count))
+	    succesful-iterations iteration-count)))
 
 
 (defun run-iterations (graph iteration-count from to)
@@ -129,4 +130,5 @@
       ;; 	  (format *error-output* "~a~%" iterations-so-far))
       (if (bfs-with-gamma from to (create-gamma graph))
 	  (incf succesful-iterations)))
-    (values (format nil "~f" (/ succesful-iterations iteration-count)) succesful-iterations iteration-count)))
+    (values (format nil "~f" (/ succesful-iterations iteration-count))
+	    succesful-iterations iteration-count)))
