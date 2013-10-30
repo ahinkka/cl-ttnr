@@ -5,22 +5,29 @@
 ;;;;
 ;;
 ;; Usage example:
-;;  (let*
-;;      ((graph (bmg:read-graph #P"/path/to/data.bmg"))
-;;       (start-node (gethash "Protein_UniProt:P04083" (bmg:node-by-name graph)))
-;;       (goal-node (gethash "Protein_UniProt:P07355" (bmg:node-by-name graph))))
-;;    (time (run-iterations graph 5000 start-node goal-node)))
+;; (let*
+;;     ((graph (bmg:read-graph #P"/path/to/data.bmg"))
+;;      (start-node (gethash "Protein_UniProt:P04083" (bmg:node-by-name graph)))
+;;      (goal-node (gethash "Protein_UniProt:P07355" (bmg:node-by-name graph))))
+;;   (time (array-ttnr:run-iterations
+;; 	 #'array-ttnr:bfs-lazy-with-bit-vectors
+;; 	 graph 5000 start-node goal-node)))
 ;;
-;;  (let*
-;;      ((graph (bmg:read-graph #P"/path/to/data.bmg"))
-;;       (start-node (gethash "Protein_UniProt:P04083" (bmg:node-by-name graph)))
-;;       (goal-node (gethash "Protein_UniProt:P07355" (bmg:node-by-name graph))))
-;;    (time (run-lazy-iterations graph 10000 start-node goal-node)))
+;; (let*
+;;     ((graph (bmg:read-graph #P"/path/to/data.bmg"))
+;;      (start-node (gethash "Protein_UniProt:P04083" (bmg:node-by-name graph)))
+;;      (goal-node (gethash "Protein_UniProt:P07355" (bmg:node-by-name graph))))
+;;   (time (array-ttnr:run-iterations
+;; 	 #'array-ttnr:bfs-with-precomputed-gamma
+;; 	 graph 5000 start-node goal-node)))
+;;
 
 (defpackage #:array-ttnr
   (:use #:common-lisp #:iterate)
   (:export #:run-iterations
-	   #:randomized-bfs))
+	   #:bfs-lazy-with-bit-vectors
+	   #:bfs-with-precomputed-gamma
+	   #:create-gamma))
 
 (in-package :array-ttnr)
 
@@ -58,27 +65,32 @@
     array))
 
 
-(defun bfs-with-gamma (start-node goal-node gamma &optional
-		       (visited (make-array (list (array-dimension gamma 0)) :element-type 'bit)))
+(defun bfs-with-precomputed-gamma (graph start-node goal-node &optional
+				   (gamma (create-gamma graph))
+				   (visited (make-array (list (slot-value graph 'bmg::max-node-id)) :element-type 'bit)))
+  (declare (type (simple-array bit) visited))
+  (declare (type (array bit 2) gamma))
   (declare (optimize (speed 3) (safety 0) (space 0) (debug 0) (compilation-speed 0)))
   (let ((queue (list (bmg:id start-node)))
 	(goal-node (bmg:id goal-node))
-	(max-node-id (- (array-dimension gamma 0) 1)))
+	(max-node-id (slot-value graph 'bmg::max-node-id)))
+
     (loop while queue do
 	 (let ((current-node (pop queue)))
 	   (if (eq current-node goal-node)
-	       (return-from bfs-with-gamma t))
+	       (return-from bfs-with-precomputed-gamma t))
 	   (setf (aref visited current-node) 1)
 
  	   (iterate (for i from 0 to max-node-id)
 		    (when (eq 1 (aref gamma current-node i))
-		      (if (eq 0 (aref visited i))
-			  (if (not queue)
-			      (setf queue (cons i queue))
-			      (nconc queue (list i))))))))))
+		      (when (eq 0 (aref visited i))
+			(if (not queue)
+			    (setf queue (cons i queue))
+			    (nconc queue (list i))))))))))
 
 
-(defun lazy-random-bfs (graph start-node goal-node)
+(defun bfs-lazy-with-bit-vectors (graph start-node goal-node)
+  (declare (optimize (speed 3) (safety 0) (space 0) (debug 0) (compilation-speed 0)))
   (let* ((weights (create-weight-matrix graph))
 	 (queue (list (bmg:id start-node)))
 	 (goal-node (bmg:id goal-node))
@@ -87,48 +99,43 @@
 	 (visited (make-array (list array-size) :element-type 'bit))
 	 (calculated (make-array (list array-size array-size) :element-type 'bit))
 	 (connected (make-array (list array-size array-size) :element-type 'bit)))
+    (declare (type (simple-array bit) visited))
+    (declare (type (array bit 2) calculated connected))
 
     (loop while queue do
 	 (let ((current-node (pop queue)))
-	   (if (= current-node goal-node)
-	       (return-from lazy-random-bfs t))
+	   (when (eq current-node goal-node)
+	     (return-from bfs-lazy-with-bit-vectors t))
 	   (setf (aref visited current-node) 1)
 
- 	   (iterate (for i from 0 to max-node-id)
-		    (progn
-		      (when (and
-			     (eq 0 (aref calculated current-node i))
-			     (> 0.0 (aref weights current-node i)))
-			(setf (aref connected current-node i)
-			      (let ((r (random 1.0))
-				    (g (aref weights current-node i)))
-				(declare (type single-float r g))
-				(if (> g r)
-				    1
-				    0))))
-		      (if (eq 1 (aref connected current-node i))
-			  (if (not queue)
-			      (setf queue (cons i queue))
-			      (nconc queue (list i))))))))))
+ 	   (iterate
+	     (for i from 0 to max-node-id)
+	     (let
+		 ((edge-existence-calculated (eq 1 (aref calculated current-node i)))
+		  (edge-weight (aref weights current-node i)))
+	       (declare (type single-float edge-weight))
+
+	       (when (and
+		      (eq nil edge-existence-calculated)
+		      (> edge-weight 0.0))
+
+		 (setf (aref connected current-node i)
+		       (let ((random-float (random 1.0)))
+			 (declare (type single-float random-float))
+			 (if (> edge-weight random-float) 1 0)))
+		 (setf (aref calculated current-node i) 1))
+
+	       (when (eq 1 (aref connected current-node i))
+		 (unless (eq 1 (aref visited i))
+		   (if (not queue)
+		       (setf queue (cons i queue))
+		       (nconc queue (list i)))))))))))
 
 
-(defun run-lazy-iterations (graph iteration-count from to)
-  (let ((succesful-iterations 0))
+(defun run-iterations (implementation graph iteration-count from to)
+  (let ((successful-iterations 0))
     (dotimes (iterations-so-far iteration-count)
-      ;; (if (= (mod iterations-so-far 100000) 0)
-      ;; 	  (format *error-output* "~a~%" iterations-so-far))
-      (if (lazy-random-bfs graph from to)
-	  (incf succesful-iterations)))
-    (values (format nil "~f" (/ succesful-iterations iteration-count))
-	    succesful-iterations iteration-count)))
-
-
-(defun run-iterations (graph iteration-count from to)
-  (let ((succesful-iterations 0))
-    (dotimes (iterations-so-far iteration-count)
-      ;; (if (= (mod iterations-so-far 100000) 0)
-      ;; 	  (format *error-output* "~a~%" iterations-so-far))
-      (if (bfs-with-gamma from to (create-gamma graph))
-	  (incf succesful-iterations)))
-    (values (format nil "~f" (/ succesful-iterations iteration-count))
-	    succesful-iterations iteration-count)))
+      (when (funcall implementation graph from to)
+	(incf successful-iterations)))
+    (values (format nil "~f" (/ successful-iterations iteration-count))
+	    successful-iterations iteration-count)))
