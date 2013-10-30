@@ -93,23 +93,24 @@
   (declare (optimize (speed 3) (safety 0) (space 0) (debug 0) (compilation-speed 0)))
   (let* ((weights (create-weight-matrix graph))
 	 (queue (list (bmg:id start-node)))
-	 (goal-node (bmg:id goal-node))
+	 (goal-node-id (bmg:id goal-node))
 	 (max-node-id (slot-value graph 'bmg::max-node-id))
 	 (array-size (+ 1 max-node-id))
 	 (visited (make-array (list array-size) :element-type 'bit))
 	 (calculated (make-array (list array-size array-size) :element-type 'bit))
 	 (connected (make-array (list array-size array-size) :element-type 'bit)))
+    (declare (type (simple-array single-float 2) weights))
+    (declare (type fixnum goal-node-id array-size max-node-id))
     (declare (type (simple-array bit) visited))
     (declare (type (array bit 2) calculated connected))
 
     (loop while queue do
 	 (let ((current-node (pop queue)))
-	   (when (eq current-node goal-node)
+	   (when (eq current-node goal-node-id)
 	     (return-from bfs-lazy-with-bit-vectors t))
 	   (setf (aref visited current-node) 1)
 
- 	   (iterate
-	     (for i from 0 to max-node-id)
+ 	   (dotimes (i max-node-id)
 	     (let
 		 ((edge-existence-calculated (eq 1 (aref calculated current-node i)))
 		  (edge-weight (aref weights current-node i)))
