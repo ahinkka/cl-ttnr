@@ -1,3 +1,3 @@
 (asdf:defsystem #:ttnr
-  :depends-on (#:bmgraph)
+  :depends-on (#:alexandria #:bmgraph)
   :components ((:file "ttnr")))

@@ -5,13 +5,18 @@
 	   #:node-by-name
 	   #:node-by-id
 
+	   ; Classes
+	   #:edge
+
 	   ; Accessors
 	   #:name
 	   #:id
 	   #:goodness
 	   #:edges
 
+	   ; Other functions
 	   #:add-edge
+	   #:add-node
 	   #:remove-node
 	   #:remove-edge
 	   #:other-node
@@ -42,6 +47,11 @@
 ;; Common graph manipulation
 (defmethod add-edge ((object node) edge)
   (setf (edges object) (cons edge (edges object))))
+
+(defmethod add-node ((object graph) name)
+  (make-instance 'node
+		 :name name
+		 :id (incf (max-node-id object))))
 
 (defmethod remove-node ((object graph) node)
   (remhash (name node) (node-by-name object))
