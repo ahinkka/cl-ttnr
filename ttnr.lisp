@@ -49,18 +49,6 @@
 	       (bmg:remove-node graph current-node))))))
 
 
-(defun find-path-pair (graph exclusions)
-  "Finds a pair of nodes that can be combined together, i.e. both are of degree 2."
-  (let ((candidates (remove-if
-		     #'(lambda (x) (member x exclusions :test #'bmg:node-equal))
-		     (collect-nodes-by-degree graph 2))))
-    (dolist (node candidates)
-      (dolist (edge (bmg:edges node))
-	(let ((neighbor (bmg:other-node edge node)))
-	  (when (member neighbor candidates :test #'bmg:node-equal)
-	    (return-from find-path-pair (list node neighbor))))))))
-
-
 (defun collect-neighbors (nodes)
   "Collects all the neighboring nodes of given list of nodes."
   (set-difference
@@ -72,32 +60,27 @@
 
 
 (defun collect-edges (nodes)
-  (alexandria:flatten
-   (loop for node in nodes
-      collect (loop for edge in (bmg:edges node)
-		 collect edge))))
+  (remove-duplicates
+   (alexandria:flatten
+    (loop for node in nodes
+       collect (loop for edge in (bmg:edges node)
+		  collect edge)))
+   :key #'bmg:id))
 
 
-(defun combine-nodes (graph node another-node)
-  "Combines a pair of nodes into a new node."
+(defun remove-serial-node (graph node)
   (let*
-      ((new-node (bmg:add-node graph (string (gensym))))
-       (neighbors (collect-neighbors (list node another-node)))
-       (all-edges (collect-edges (list node another-node)))
-       (goodness (apply #'min (mapcar #'bmg:goodness all-edges))))
+      ((edges (collect-edges (list node)))
+       (neighbors (mapcar #'(lambda (edge) (bmg:other-node edge node)) edges))
+       (weights (mapcar #'bmg:goodness edges))
+       (new-edge-weight (apply #'* weights))
+       (new-edge (bmg:make-edge graph (first neighbors) (second neighbors) new-edge-weight)))
+    (dolist (edge edges)
+      (bmg:remove-edge edge))
     (bmg:remove-node graph node)
-    (bmg:remove-node graph another-node)
-
-    (dolist (neighbor neighbors)
-      (let
-	  ((edge (make-instance 'bmg:edge
-				:from new-node
-				:to neighbor
-				:goodness goodness
-				:id (incf (bmg::max-edge-id graph)))))
-	(bmg:add-edge (bmg::from edge) edge)
-	(bmg:add-edge (bmg::to edge) edge)))
-    new-node))
+    
+    (bmg:add-edge (first neighbors) new-edge)
+    (bmg:add-edge (second neighbors) new-edge)))
 
 
 (defun remove-serial-nodes (graph exclusions)
@@ -105,11 +88,12 @@
       ((removed 0))
     (loop do
 	 (let
-	     ((pair (ttnr::find-path-pair graph exclusions)))
-	   (unless pair (return))
+	     ((candidates (remove-if
+			   #'(lambda (x) (member x exclusions :test #'bmg:node-equal))
+			   (collect-nodes-by-degree graph 2))))
+	   (unless candidates (return-from remove-serial-nodes removed))
 	   (incf removed)
-	   (ttnr::combine-nodes graph (first pair) (second pair))))
-    removed))
+	   (remove-serial-node graph (first candidates))))))
 
 
 (defun randomized-bfs (start-node goal-node
@@ -127,16 +111,17 @@
 		    (other-node-id (bmg:id other-node))
 		    (edge-id (bmg:id edge)))
 	       (declare (type fixnum other-node-id edge-id))
-	       (when (and (not (gethash other-node-id visited))
-			  (not (gethash edge-id edges-not-exist)))
+	       (unless (or
+			(gethash other-node-id visited)
+			(gethash edge-id edges-not-exist))
 		 (let ((r (random 1.0))
 		       (g (bmg:goodness edge)))
 		   (declare (type single-float r g))
-		   (when (> g r)
-		     (if (not queue)
-			 (setf queue (cons other-node queue))
-			 (nconc queue (list other-node)))
-		     (setf (gethash (bmg:id edge) edges-not-exist) t))))))))))
+		   (if (> g r)
+		       (if (not queue)
+			   (setf queue (cons other-node queue))
+			   (nconc queue (list other-node)))
+		       (setf (gethash (bmg:id edge) edges-not-exist) t))))))))))
 
 
 (defun run-iterations (implementation iteration-count from to)

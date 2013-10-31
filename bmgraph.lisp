@@ -16,7 +16,8 @@
 
 	   ; Other functions
 	   #:add-edge
-	   #:add-node
+	   #:make-node
+	   #:make-edge
 	   #:remove-node
 	   #:remove-edge
 	   #:other-node
@@ -48,10 +49,17 @@
 (defmethod add-edge ((object node) edge)
   (setf (edges object) (cons edge (edges object))))
 
-(defmethod add-node ((object graph) name)
+(defmethod make-node ((object graph) name)
   (make-instance 'node
 		 :name name
 		 :id (incf (max-node-id object))))
+
+(defmethod make-edge ((object graph) from to goodness)
+  (make-instance 'edge
+		 :from from
+		 :to to
+		 :goodness goodness
+		 :id (incf (max-edge-id object))))
 
 (defmethod remove-node ((object graph) node)
   (remhash (name node) (node-by-name object))
