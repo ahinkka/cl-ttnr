@@ -18,6 +18,7 @@
   (:export #:run-iterations
 	   #:remove-dangling-nodes
 	   #:remove-serial-nodes
+	   #:remove-parallel-edges
 	   #:randomized-bfs))
 
 (in-package :ttnr)
@@ -32,7 +33,8 @@
 
 (defun remove-dangling-nodes (graph preservables)
   (let* ((visited (make-hash-table :test #'eq))
-	 (queue (collect-nodes-by-degree graph 1)))
+	 (queue (collect-nodes-by-degree graph 1))
+	 (removed 0))
     (loop while queue do
 	 (let
 	     ((current-node (pop queue)))
@@ -46,7 +48,10 @@
 	   (if (and
 		(not (member current-node preservables))
 		(< (length (bmg:edges current-node)) 2))
-	       (bmg:remove-node graph current-node))))))
+	       (progn
+		 (bmg:remove-node graph current-node)
+		 (incf removed)))))
+    (format *error-output* "Removed ~A dangling nodes~%" removed)))
 
 
 (defun collect-neighbors (nodes)
@@ -91,9 +96,57 @@
 	     ((candidates (remove-if
 			   #'(lambda (x) (member x exclusions :test #'bmg:node-equal))
 			   (collect-nodes-by-degree graph 2))))
-	   (unless candidates (return-from remove-serial-nodes removed))
+	   (unless candidates
+	     (progn
+	       (format *error-output* "Removed ~A serial nodes~%" removed)
+	       (return-from remove-serial-nodes removed)))
 	   (incf removed)
 	   (remove-serial-node graph (first candidates))))))
+
+
+(defun remove-parallel-edges-helper (graph)
+  (let*
+      ((removed 0)
+       (candidates
+	(mapcar #'(lambda (edge) (cons (list (bmg::from edge) (bmg::to edge)) edge))
+		(collect-edges (alexandria:hash-table-values (bmg:node-by-id graph)))))
+       (unique-edges (remove-duplicates (mapcar #'car candidates) :test #'equal))
+       (counts
+	(mapcar #'(lambda (edge)
+		    (cons edge (count edge candidates :key #'car :test #'equal)))
+		unique-edges))
+       (real-candidates (remove-if #'(lambda (x) (< (cdr x) 2)) counts)))
+    (dolist (candidate real-candidates)
+      (let
+	  (first second)
+	(setf first (assoc (car candidate) candidates :test #'equal))
+	(setf candidates (delete first candidates))
+	(setf second (assoc (car candidate) candidates :test #'equal))
+	(setf candidates (delete second candidates))
+
+	(let
+	    ((e1 (cdr first))
+	     (e2 (cdr second)))
+
+	  (setf (bmg:goodness e1)
+	      (/ 1 (+ (/ 1 (max (bmg:goodness e1)) (/ 1 (bmg:goodness e2))))))
+	  (bmg:remove-edge e2)
+	  (incf removed))))
+    removed))
+
+
+(defun remove-parallel-edges (graph)
+  (let
+      ((removed 0))
+    (loop do
+	 (let
+	     ((removed-this-round (remove-parallel-edges-helper graph)))
+	   (incf removed removed-this-round)
+
+	   (when (= 0 removed-this-round)
+	     (progn
+	       (format *error-output* "Removed ~A parallel edges~%" removed)
+	       (return-from remove-parallel-edges removed)))))))
 
 
 (defun randomized-bfs (start-node goal-node
