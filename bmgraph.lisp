@@ -75,10 +75,15 @@
 
 
 ;; Utility functions
-(defmethod other-node ((object edge) node)
-  (if (eq (id node) (id (to object)))
-      (from object)
-      (to object)))
+(declaim (inline other-node))
+(defun other-node (edge node)
+  (if (eq (id node) (id (to edge)))
+      (from edge)
+      (to edge)))
+;; (defmethod other-node ((object edge) node)
+;;   (if (eq (id node) (id (to object)))
+;;       (from object)
+;;       (to object)))
 
 (defmethod node-equal ((object node) node)
   (= (id object) (id node)))
