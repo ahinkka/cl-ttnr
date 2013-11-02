@@ -52,7 +52,7 @@
 		 (bmg:remove-node graph current-node)
 		 (incf removed)))))
     (format *error-output* "Removed ~A dangling nodes~%" removed)))
-
+ 
 
 (defun collect-neighbors (nodes)
   "Collects all the neighboring nodes of given list of nodes."
@@ -104,6 +104,10 @@
 	   (remove-serial-node graph (first candidates))))))
 
 
+(defun combine-parallel-edge-weights (weights)
+  (- 1 (apply #'* (mapcar #'(lambda (weight) (- 1 weight)) weights))))
+
+
 (defun remove-parallel-edges-helper (graph)
   (let*
       ((removed 0)
@@ -129,7 +133,9 @@
 	     (e2 (cdr second)))
 
 	  (setf (bmg:goodness e1)
-	      (/ 1 (+ (/ 1 (max (bmg:goodness e1)) (/ 1 (bmg:goodness e2))))))
+		(combine-parallel-edge-weights
+		 (mapcar #'bmg:goodness (list e1 e2))))
+
 	  (bmg:remove-edge e2)
 	  (incf removed))))
     removed))
@@ -137,16 +143,18 @@
 
 (defun remove-parallel-edges (graph)
   (let
-      ((removed 0))
+      ((removed 0)
+       (rounds 0))
     (loop do
 	 (let
 	     ((removed-this-round (remove-parallel-edges-helper graph)))
 	   (incf removed removed-this-round)
+	   (incf rounds)
 
 	   (when (= 0 removed-this-round)
 	     (progn
 	       (format *error-output* "Removed ~A parallel edges~%" removed)
-	       (return-from remove-parallel-edges removed)))))))
+	       (return-from remove-parallel-edges (values removed rounds))))))))
 
 
 (defun randomized-bfs (start-node goal-node
