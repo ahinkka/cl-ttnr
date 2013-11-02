@@ -139,7 +139,7 @@
       (mapcar #'cdr (remove-if-not #'larger-than-one count-edge-pairs :key #'car)))))
 
 
-(defun remove-parallel-edges-helper (graph)
+(defun remove-parallel-edges (graph)
   (let
       ((removed 0)
        (duplicate-pairs (nodepairs-with-duplicate-edges graph)))
@@ -161,23 +161,8 @@
 	(dolist (edge rest-edges)
 	  (bmg:remove-edge edge)
 	  (incf removed))))
+    (format *error-output* "Removed ~A parallel edges~%" removed)
     removed))
-
-
-(defun remove-parallel-edges (graph)
-  (let
-      ((removed 0)
-       (rounds 0))
-    (loop do
-	 (let
-	     ((removed-this-round (remove-parallel-edges-helper graph)))
-	   (incf removed removed-this-round)
-	   (incf rounds)
-
-	   (when (= 0 removed-this-round)
-	     (progn
-	       (format *error-output* "Removed ~A parallel edges~%" removed)
-	       (return-from remove-parallel-edges (values removed rounds))))))))
 
 
 (defun randomized-bfs (start-node goal-node
