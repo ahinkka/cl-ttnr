@@ -108,35 +108,58 @@
   (- 1 (apply #'* (mapcar #'(lambda (weight) (- 1 weight)) weights))))
 
 
+(defun node-pair-equal (x y)
+  (and
+   (bmg:node-equal (first x) (first y))
+   (bmg:node-equal (second x) (second y))))
+
+
+(defun endpoint-edge-pairs (graph)
+  "Returns a list of ((node . node) . edge) pairs."
+  (flet ((sort-nodes (nodes)
+	   (sort nodes #'< :key #'(lambda (node) (bmg:id node)))))
+    (mapcar #'(lambda (edge)
+		(cons
+		 (sort-nodes (list (bmg::from edge) (bmg::to edge)))
+		 edge))
+	    (collect-edges (alexandria:hash-table-values (bmg:node-by-name graph))))))
+
+
+(defun nodepairs-with-duplicate-edges (graph)
+  (flet ((larger-than-one (number) (> number 1)))
+    (let*
+	((pairs (endpoint-edge-pairs graph))
+	 (unique-pairs (remove-duplicates pairs :key #'car :test #'node-pair-equal))
+	 (count-edge-pairs
+	  (mapcar #'(lambda (pair)
+		      (cons
+		       (count pair pairs :key #'car :test #'node-pair-equal)
+		       pair))
+		  (mapcar #'car unique-pairs))))
+      (mapcar #'cdr (remove-if-not #'larger-than-one count-edge-pairs :key #'car)))))
+
+
 (defun remove-parallel-edges-helper (graph)
-  (let*
+  (let
       ((removed 0)
-       (candidates
-	(mapcar #'(lambda (edge) (cons (list (bmg::from edge) (bmg::to edge)) edge))
-		(collect-edges (alexandria:hash-table-values (bmg:node-by-id graph)))))
-       (unique-edges (remove-duplicates (mapcar #'car candidates) :test #'equal))
-       (counts
-	(mapcar #'(lambda (edge)
-		    (cons edge (count edge candidates :key #'car :test #'equal)))
-		unique-edges))
-       (real-candidates (remove-if #'(lambda (x) (< (cdr x) 2)) counts)))
-    (dolist (candidate real-candidates)
-      (let
-	  (first second)
-	(setf first (assoc (car candidate) candidates :test #'equal))
-	(setf candidates (delete first candidates))
-	(setf second (assoc (car candidate) candidates :test #'equal))
-	(setf candidates (delete second candidates))
+       (duplicate-pairs (nodepairs-with-duplicate-edges graph)))
 
-	(let
-	    ((e1 (cdr first))
-	     (e2 (cdr second)))
+    (dolist (pair duplicate-pairs)
+      (let*
+	  ((from (first pair))
+	   (to (second pair))
+	   (edges-between (remove-if-not
+			   #'(lambda (edge)
+			       (bmg:node-equal (bmg:other-node edge from) to))
+			   (bmg:edges from)))
+	   (new-weight (combine-parallel-edge-weights (mapcar #'bmg:goodness edges-between)))
+	   (first-edge (car edges-between))
+	   (rest-edges (cdr edges-between)))
 
-	  (setf (bmg:goodness e1)
-		(combine-parallel-edge-weights
-		 (mapcar #'bmg:goodness (list e1 e2))))
+	(setf (bmg:goodness first-edge) new-weight)
 
-	  (bmg:remove-edge e2)
+	(dolist (edge rest-edges)
+	  (bmg:remove-edge edge)
 	  (incf removed))))
     removed))
 
