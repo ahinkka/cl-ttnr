@@ -48,12 +48,15 @@
 			 (setf (gethash edge edges-not-exist) t)))))))))))
 
 
-(defun run-iterations (implementation iteration-count from to)
-  (let ((succesful-iterations 0))
+(defun run-iterations (implementation iteration-count from to &rest arguments)
+  (let ((successful-iterations 0)
+	(arglist (nconc (list from to) arguments)))
+    (declare (type fixnum successful-iterations))
+    
     (dotimes (iterations-so-far iteration-count)
       ;; (if (= (mod iterations-so-far 100000) 0)
       ;; 	  (format *error-output* "~a~%" iterations-so-far))
-      (if (funcall implementation from to)
-	    (incf succesful-iterations)))
-    (values (format nil "~f" (/ succesful-iterations iteration-count))
-	    succesful-iterations iteration-count)))
+      (if (apply implementation arglist)
+	  (incf successful-iterations)))
+    (values (format nil "~f" (/ successful-iterations iteration-count))
+	    successful-iterations iteration-count)))
