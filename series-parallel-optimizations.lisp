@@ -55,7 +55,6 @@
 	   (remove-serial-node graph (first candidates))))))
 
 
-
 (defun endpoint-edge-pairs (graph)
   "Returns a list of ((node . node) . edge) pairs."
   (flet ((sort-nodes (nodes)
@@ -68,7 +67,9 @@
 
 
 (defun nodepairs-with-duplicate-edges (graph)
-  (flet ((larger-than-one (number) (> number 1)))
+  (flet ((not-one (number)
+	   (declare (type fixnum number))
+	   (not (eq number 1))))
     (let*
 	((pairs (endpoint-edge-pairs graph))
 	 (unique-pairs (remove-duplicates pairs :key #'car :test #'equal))
@@ -78,7 +79,7 @@
 		       (count pair pairs :key #'car :test #'equal)
 		       pair))
 		  (mapcar #'car unique-pairs))))
-      (mapcar #'cdr (remove-if-not #'larger-than-one count-edge-pairs :key #'car)))))
+      (mapcar #'cdr (remove-if-not #'not-one count-edge-pairs :key #'car)))))
 
 
 (defun remove-parallel-edges (graph)
