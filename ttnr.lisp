@@ -42,7 +42,7 @@
 		       (g (bmg:goodness edge)))
 		   (declare (type single-float r g))
 		   (if (> g r)
-		       (if (not queue)
+		       (if (null queue)
 			   (setf queue (cons other-node queue))
 			   (nconc queue (list other-node)))
 		       (setf (gethash edge edges-not-exist) t))))))))))
