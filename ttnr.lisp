@@ -24,11 +24,12 @@
 (in-package :ttnr)
 
 
-(defun randomized-bfs (start-node goal-node
-		       &optional (visited (make-hash-table :test #'eq))
-		       (edges-not-exist (make-hash-table :test #'eq)))
+(defun randomized-bfs (start-node goal-node)
   (declare (optimize (speed 3) (safety 0) (space 0) (debug 0) (compilation-speed 0)))
-  (let ((queue (list start-node)))
+  (let ((queue (list start-node))
+	(visited (make-hash-table :test #'eq))
+	(edges-not-exist (make-hash-table :test #'eq)))
+
     (loop while queue do
 	 (let ((current-node (pop queue)))
 	   (when (eq current-node goal-node) (return-from randomized-bfs t))
