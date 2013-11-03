@@ -30,18 +30,14 @@
   (declare (optimize (speed 3) (safety 0) (space 0) (debug 0) (compilation-speed 0)))
   (let ((queue (list start-node)))
     (loop while queue do
-	 (let* ((current-node (pop queue))
-		(current-node-id (bmg:id current-node)))
+	 (let* ((current-node (pop queue)))
 	   (when (eq current-node goal-node) (return-from randomized-bfs t))
-	   (setf (gethash current-node-id visited) t)
+	   (setf (gethash current-node visited) t)
 	   (dolist (edge (bmg:edges current-node))
-	     (let* ((other-node (bmg:other-node edge current-node))
-		    (other-node-id (bmg:id other-node))
-		    (edge-id (bmg:id edge)))
-	       (declare (type fixnum other-node-id edge-id))
+	     (let* ((other-node (bmg:other-node edge current-node)))
 	       (unless (or
-			(gethash other-node-id visited)
-			(gethash edge-id edges-not-exist))
+			(gethash other-node visited)
+			(gethash edge edges-not-exist))
 		 (let ((r (random 1.0))
 		       (g (bmg:goodness edge)))
 		   (declare (type single-float r g))
@@ -49,7 +45,7 @@
 		       (if (not queue)
 			   (setf queue (cons other-node queue))
 			   (nconc queue (list other-node)))
-		       (setf (gethash (bmg:id edge) edges-not-exist) t))))))))))
+		       (setf (gethash edge edges-not-exist) t))))))))))
 
 
 (defun run-iterations (implementation iteration-count from to)
