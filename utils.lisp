@@ -15,7 +15,7 @@
     (loop for node in nodes
        collect (loop for edge in (bmg:edges node)
 		 collect (bmg:other-node edge node))))
-   nodes :test #'bmg:node-equal))
+   nodes :test #'eq))
 
 
 (defun collect-edges (nodes)
@@ -29,9 +29,3 @@
 
 (defun combine-parallel-edge-weights (weights)
   (- 1 (apply #'* (mapcar #'(lambda (weight) (- 1 weight)) weights))))
-
-
-(defun node-pair-equal (x y)
-  (and
-   (bmg:node-equal (first x) (first y))
-   (bmg:node-equal (second x) (second y))))

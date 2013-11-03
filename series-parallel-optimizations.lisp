@@ -45,7 +45,7 @@
     (loop do
 	 (let
 	     ((candidates (remove-if
-			   #'(lambda (x) (member x exclusions :test #'bmg:node-equal))
+			   #'(lambda (x) (member x exclusions :test #'eq))
 			   (collect-nodes-by-degree graph 2))))
 	   (unless candidates
 	     (progn
@@ -71,11 +71,11 @@
   (flet ((larger-than-one (number) (> number 1)))
     (let*
 	((pairs (endpoint-edge-pairs graph))
-	 (unique-pairs (remove-duplicates pairs :key #'car :test #'node-pair-equal))
+	 (unique-pairs (remove-duplicates pairs :key #'car :test #'equal))
 	 (count-edge-pairs
 	  (mapcar #'(lambda (pair)
 		      (cons
-		       (count pair pairs :key #'car :test #'node-pair-equal)
+		       (count pair pairs :key #'car :test #'equal)
 		       pair))
 		  (mapcar #'car unique-pairs))))
       (mapcar #'cdr (remove-if-not #'larger-than-one count-edge-pairs :key #'car)))))
@@ -92,7 +92,7 @@
 	   (to (second pair))
 	   (edges-between (remove-if-not
 			   #'(lambda (edge)
-			       (bmg:node-equal (bmg:other-node edge from) to))
+			       (eq (bmg:other-node edge from) to))
 			   (bmg:edges from)))
 	   (new-weight (combine-parallel-edge-weights (mapcar #'bmg:goodness edges-between)))
 	   (first-edge (car edges-between))

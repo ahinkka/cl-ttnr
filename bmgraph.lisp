@@ -20,8 +20,7 @@
 	   #:make-edge
 	   #:remove-node
 	   #:remove-edge
-	   #:other-node
-	   #:node-equal))
+	   #:other-node))
 
 (in-package :bmgraph)
 
@@ -84,9 +83,6 @@
 ;;   (if (eq (id node) (id (to object)))
 ;;       (from object)
 ;;       (to object)))
-
-(defmethod node-equal ((object node) node)
-  (= (id object) (id node)))
 
 (defmethod print-object ((object edge) stream)
   (print-unreadable-object (object stream :type t)

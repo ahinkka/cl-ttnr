@@ -32,7 +32,7 @@
     (loop while queue do
 	 (let* ((current-node (pop queue))
 		(current-node-id (bmg:id current-node)))
-	   (when (bmg:node-equal current-node goal-node) (return-from randomized-bfs t))
+	   (when (eq current-node goal-node) (return-from randomized-bfs t))
 	   (setf (gethash current-node-id visited) t)
 	   (dolist (edge (bmg:edges current-node))
 	     (let* ((other-node (bmg:other-node edge current-node))
