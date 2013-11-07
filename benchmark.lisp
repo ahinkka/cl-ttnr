@@ -15,30 +15,52 @@
   (let*
       ((start (get-internal-run-time))
        (graph (bmg:read-graph #P"data.bmg"))
-       (*from* (gethash *from* (bmg:node-by-name graph)))
-       (*to* (gethash *to* (bmg:node-by-name graph)))
+       (from (gethash *from* (bmg:node-by-name graph)))
+       (to (gethash *to* (bmg:node-by-name graph)))
+       (best-paths nil)
        (graph-read (get-internal-run-time))
        (graph-simplified nil)
-       (ttnr-calculated nil))
+       (paths-calculated nil)
+       (ttnr-estimated nil)
 
-    (ttnr:remove-dangling-nodes graph (list *from* *to*))
-    (ttnr:remove-serial-nodes graph (list *from* *to*))
+       (mg nil)
+       (best-path-nodes))
+
+    (ttnr:remove-dangling-nodes graph (list from to))
+    (ttnr:remove-serial-nodes graph (list from to))
     (ttnr:remove-parallel-edges graph)
-    (ttnr:remove-serial-nodes graph (list *from* *to*))
+    (ttnr:remove-serial-nodes graph (list from to))
     (ttnr:remove-parallel-edges graph)
-    (ttnr:remove-dangling-nodes graph (list *from* *to*))
+    (ttnr:remove-dangling-nodes graph (list from to))
+
+    (setf best-path-nodes (bmg-bestpath:collect-nodes (bmg-bestpath:best-distinct-paths from to)))
+    (setf mg (ttnr:bmgraph-to-minimal-graph graph))
+    (setf mg (mg:order-edges-by-weight mg))
+    (setf mg (mg:order-edges-by-preferred-nodes
+	      mg (mapcar #'bmg:id best-path-nodes)))
+    (setf mg (mg:order-graph-by-preferred-nodes
+	      mg (mapcar #'bmg:id best-path-nodes)))
+    ;; (time (ttnr:run-iterations #'ttnr:bfs-with-minimal-graph 100000 (bmg:id start-node) (bmg:id goal-node) mg)))
+
     (setf graph-simplified (get-internal-run-time))
     (format *error-output* "Nodes left: ~a~%" (hash-table-count (bmg:node-by-name graph)))
 
+    (setf best-paths (bmg-bestpath:best-distinct-paths from to))
+    (setf paths-calculated (get-internal-run-time))
+
+    ;; (format t "~a~%"
+    ;; 	    (ttnr:run-iterations #'ttnr:bfs-with-hashes *iterations* from to best-paths))
     (format t "~a~%"
-	    (ttnr:run-iterations #'ttnr:randomized-bfs *iterations* *from* *to*))
-    (setf ttnr-calculated (get-internal-run-time))
+	    (ttnr:run-iterations #'ttnr:bfs-with-minimal-graph *iterations*
+				 (bmg:id from) (bmg:id to) mg))
+    (setf ttnr-estimated (get-internal-run-time))
 
     (values
      (- graph-read start)
      (- graph-simplified start)
-     (- ttnr-calculated start)
-     (- ttnr-calculated graph-simplified))))
+     (- paths-calculated graph-simplified)
+     (- ttnr-estimated paths-calculated)
+     (- ttnr-estimated start))))
 
 
 (defvar *times* nil)
